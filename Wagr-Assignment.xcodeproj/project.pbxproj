@@ -16,6 +16,13 @@
 		AA2CDF8A260E779300BC8303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2CDF88260E779300BC8303 /* LaunchScreen.storyboard */; };
 		AA2CDF95260E779300BC8303 /* Wagr_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF94260E779300BC8303 /* Wagr_AssignmentTests.swift */; };
 		AA2CDFA0260E779300BC8303 /* Wagr_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF9F260E779300BC8303 /* Wagr_AssignmentUITests.swift */; };
+		AA2CDFC0260E8DAF00BC8303 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFBF260E8DAF00BC8303 /* NetworkManager.swift */; };
+		AA2CDFC1260E8DAF00BC8303 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFBF260E8DAF00BC8303 /* NetworkManager.swift */; };
+		AA2CDFCC260E8E1A00BC8303 /* Team+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFC8260E8E1A00BC8303 /* Team+CoreDataClass.swift */; };
+		AA2CDFCD260E8E1A00BC8303 /* Team+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFC9260E8E1A00BC8303 /* Team+CoreDataProperties.swift */; };
+		AA2CDFCE260E8E1A00BC8303 /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFCA260E8E1A00BC8303 /* Game+CoreDataClass.swift */; };
+		AA2CDFCF260E8E1A00BC8303 /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFCB260E8E1A00BC8303 /* Game+CoreDataProperties.swift */; };
+		AA703E57260E91320037519B /* CodingUserInfoKey+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703E56260E91320037519B /* CodingUserInfoKey+Context.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,12 @@
 		AA2CDF9B260E779300BC8303 /* Wagr-AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wagr-AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2CDF9F260E779300BC8303 /* Wagr_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wagr_AssignmentUITests.swift; sourceTree = "<group>"; };
 		AA2CDFA1260E779300BC8303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA2CDFBF260E8DAF00BC8303 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AA2CDFC8260E8E1A00BC8303 /* Team+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Team+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AA2CDFC9260E8E1A00BC8303 /* Team+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Team+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AA2CDFCA260E8E1A00BC8303 /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AA2CDFCB260E8E1A00BC8303 /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AA703E56260E91320037519B /* CodingUserInfoKey+Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+Context.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +114,13 @@
 		AA2CDF79260E778F00BC8303 /* Wagr-Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				AA2CDF7A260E778F00BC8303 /* AppDelegate.swift */,
-				AA2CDF7C260E778F00BC8303 /* SceneDelegate.swift */,
-				AA2CDF7E260E778F00BC8303 /* ViewController.swift */,
-				AA2CDF80260E778F00BC8303 /* Main.storyboard */,
-				AA2CDF86260E779300BC8303 /* Assets.xcassets */,
-				AA2CDF88260E779300BC8303 /* LaunchScreen.storyboard */,
-				AA2CDF8B260E779300BC8303 /* Info.plist */,
-				AA2CDF83260E778F00BC8303 /* Wagr_Assignment.xcdatamodeld */,
+				AA703E55260E911B0037519B /* Extensions */,
+				AA2CDFBE260E8D8900BC8303 /* Networking */,
+				AA2CDFB7260E8B7500BC8303 /* CoreData */,
+				AA2CDFB6260E8B6300BC8303 /* ViewControllers */,
+				AA2CDFB5260E8B4700BC8303 /* UI */,
+				AA2CDFB4260E8B3A00BC8303 /* Resources */,
+				AA2CDFB3260E8B3400BC8303 /* App */,
 			);
 			path = "Wagr-Assignment";
 			sourceTree = "<group>";
@@ -129,6 +141,69 @@
 				AA2CDFA1260E779300BC8303 /* Info.plist */,
 			);
 			path = "Wagr-AssignmentUITests";
+			sourceTree = "<group>";
+		};
+		AA2CDFB3260E8B3400BC8303 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA2CDF7C260E778F00BC8303 /* SceneDelegate.swift */,
+				AA2CDF7A260E778F00BC8303 /* AppDelegate.swift */,
+				AA2CDF8B260E779300BC8303 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA2CDFB4260E8B3A00BC8303 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA2CDF86260E779300BC8303 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA2CDFB5260E8B4700BC8303 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AA2CDF88260E779300BC8303 /* LaunchScreen.storyboard */,
+				AA2CDF80260E778F00BC8303 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AA2CDFB6260E8B6300BC8303 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA2CDF7E260E778F00BC8303 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AA2CDFB7260E8B7500BC8303 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AA2CDFC8260E8E1A00BC8303 /* Team+CoreDataClass.swift */,
+				AA2CDFC9260E8E1A00BC8303 /* Team+CoreDataProperties.swift */,
+				AA2CDFCA260E8E1A00BC8303 /* Game+CoreDataClass.swift */,
+				AA2CDFCB260E8E1A00BC8303 /* Game+CoreDataProperties.swift */,
+				AA2CDF83260E778F00BC8303 /* Wagr_Assignment.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		AA2CDFBE260E8D8900BC8303 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AA2CDFBF260E8DAF00BC8303 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AA703E55260E911B0037519B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AA703E56260E91320037519B /* CodingUserInfoKey+Context.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +336,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2CDFCC260E8E1A00BC8303 /* Team+CoreDataClass.swift in Sources */,
+				AA2CDFCE260E8E1A00BC8303 /* Game+CoreDataClass.swift in Sources */,
 				AA2CDF7F260E778F00BC8303 /* ViewController.swift in Sources */,
 				AA2CDF85260E778F00BC8303 /* Wagr_Assignment.xcdatamodeld in Sources */,
+				AA703E57260E91320037519B /* CodingUserInfoKey+Context.swift in Sources */,
+				AA2CDFCD260E8E1A00BC8303 /* Team+CoreDataProperties.swift in Sources */,
+				AA2CDFC0260E8DAF00BC8303 /* NetworkManager.swift in Sources */,
 				AA2CDF7B260E778F00BC8303 /* AppDelegate.swift in Sources */,
 				AA2CDF7D260E778F00BC8303 /* SceneDelegate.swift in Sources */,
+				AA2CDFCF260E8E1A00BC8303 /* Game+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2CDFC1260E8DAF00BC8303 /* NetworkManager.swift in Sources */,
 				AA2CDF95260E779300BC8303 /* Wagr_AssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +524,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MAW8P85Q68;
-				INFOPLIST_FILE = "Wagr-Assignment/Info.plist";
+				INFOPLIST_FILE = "Wagr-Assignment/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +543,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MAW8P85Q68;
-				INFOPLIST_FILE = "Wagr-Assignment/Info.plist";
+				INFOPLIST_FILE = "Wagr-Assignment/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
