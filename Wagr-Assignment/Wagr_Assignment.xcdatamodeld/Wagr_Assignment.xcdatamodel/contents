@@ -4,20 +4,23 @@
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="league" optional="YES" attributeType="String"/>
+        <attribute name="spread" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="status" optional="YES" attributeType="String"/>
-        <relationship name="awayTeam" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team"/>
-        <relationship name="homeTeam" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team"/>
+        <relationship name="awayTeam" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="awayGames" inverseEntity="Team"/>
+        <relationship name="homeTeam" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="homeGames" inverseEntity="Team"/>
     </entity>
     <entity name="Team" representedClassName="Team" syncable="YES" codeGenerationType="class">
-        <attribute name="city" optional="YES"/>
-        <attribute name="id" optional="YES"/>
-        <attribute name="key" optional="YES"/>
-        <attribute name="name" optional="YES"/>
-        <attribute name="primaryColor" optional="YES"/>
-        <attribute name="secondaryColor" optional="YES"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="primaryColor" optional="YES" attributeType="String"/>
+        <attribute name="secondaryColor" optional="YES" attributeType="String"/>
+        <relationship name="awayGames" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="awayTeam" inverseEntity="Game"/>
+        <relationship name="homeGames" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="homeTeam" inverseEntity="Game"/>
     </entity>
     <elements>
-        <element name="Game" positionX="-63" positionY="-18" width="128" height="119"/>
-        <element name="Team" positionX="-54" positionY="45" width="128" height="119"/>
+        <element name="Game" positionX="-63" positionY="-18" width="128" height="134"/>
+        <element name="Team" positionX="-54" positionY="45" width="128" height="149"/>
     </elements>
 </model>
