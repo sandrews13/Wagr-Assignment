@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Wagr-Assignment
+
+  Created by Steven Andrews on 2021-03-27.
+  
+*/
+"game-cell-no-spread" = "Probabilidades pendientes";
+"games-list-offline-title" = "Modo offline";
+"games-list-offline-message" = "La aplicación se encuentra actualmente en modo fuera de línea. Puede seguir viendo los datos almacenados en caché. La aplicación se volverá a sincronizar automáticamente cuando se restablezca la conectividad.";
+"ok" = "OK";
+"today" = "Hoy Dia";
+"tomorrow" = "Mañana";

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Wagr-Assignment
+
+  Created by Steven Andrews on 2021-03-27.
+  
+*/
+"game-cell-no-spread" = "Odds pending";
+"games-list-offline-title" = "Offline Mode";
+"games-list-offline-message" = "The app is currently in offline mode. You can continue to view cached data. The app will automatically re-sync when connectivity is restored.";
+"ok" = "OK";
+"today" = "Today";
+"tomorrow" = "Tomorrow";

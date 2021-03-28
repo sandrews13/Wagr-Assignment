@@ -13,7 +13,7 @@ import CoreData
 public class Game: NSManagedObject, Codable {
     
     enum CodingKeys: String, CodingKey {
-        case date = "gameDateTime"
+        case date = "gameDatetime"
         case id = "gameId"
         case league = "league"
         case status = "gameStatus"
@@ -24,20 +24,29 @@ public class Game: NSManagedObject, Codable {
 
     public required convenience init(from decoder: Decoder) throws {
         
-        guard let context = decoder.userInfo[CodingUserInfoKey.context!] as? NSManagedObjectContext else { fatalError() }
+        guard let context = decoder.userInfo[.context] as? NSManagedObjectContext else { fatalError() }
         guard let entity = NSEntityDescription.entity(forEntityName: "Game", in: context) else { fatalError() }
         
         self.init(entity: entity, insertInto: context)
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = try container.decode(Int32.self, forKey: .id)
-        date = try container.decodeIfPresent(Date.self, forKey: .date)
-        league = try container.decodeIfPresent(String.self, forKey: .league)
+        date = try container.decode(Date.self, forKey: .date)
+        league = try container.decode(String.self, forKey: .league)
         status = try container.decodeIfPresent(String.self, forKey: .status)
         spread = try container.decodeIfPresent(String.self, forKey: .spread)
-        homeTeam = try container.decodeIfPresent(Team.self, forKey: .homeTeam)
-        awayTeam = try container.decodeIfPresent(Team.self, forKey: .awayTeam)
+        homeTeam = try fetchTeam(with: container, key: .homeTeam, context: context)
+        awayTeam = try fetchTeam(with: container, key: .awayTeam, context: context)
+    }
+    
+    private func fetchTeam(with container: KeyedDecodingContainer<CodingKeys>, key: CodingKeys, context: NSManagedObjectContext) throws -> Team? {
+        let teamId = try container.decode(TeamId.self, forKey: key)
         
+        if let coreDataTeam = Team.fetchTeam(with: teamId.id, context: context) {
+            return coreDataTeam
+        } else {
+            return try container.decodeIfPresent(Team.self, forKey: key)
+        }
     }
     
     public func encode(to encoder: Encoder) throws {
@@ -52,5 +61,4 @@ public class Game: NSManagedObject, Codable {
         try container.encode(awayTeam, forKey: .awayTeam)
         try container.encode(homeTeam, forKey: .homeTeam)
     }
-    
 }

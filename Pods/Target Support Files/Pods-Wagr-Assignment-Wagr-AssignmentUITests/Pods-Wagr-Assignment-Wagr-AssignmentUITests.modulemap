@@ -1,0 +1,6 @@
+framework module Pods_Wagr_Assignment_Wagr_AssignmentUITests {
+  umbrella header "Pods-Wagr-Assignment-Wagr-AssignmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

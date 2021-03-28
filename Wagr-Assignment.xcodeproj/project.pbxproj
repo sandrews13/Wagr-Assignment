@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B886BF0A8C2E17CD13BAC5E /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38926895E1A1C112CF83546D /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework */; };
 		AA2CDF7B260E778F00BC8303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF7A260E778F00BC8303 /* AppDelegate.swift */; };
 		AA2CDF7D260E778F00BC8303 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF7C260E778F00BC8303 /* SceneDelegate.swift */; };
-		AA2CDF7F260E778F00BC8303 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF7E260E778F00BC8303 /* ViewController.swift */; };
+		AA2CDF7F260E778F00BC8303 /* BrowseGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF7E260E778F00BC8303 /* BrowseGamesViewController.swift */; };
 		AA2CDF82260E778F00BC8303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2CDF80260E778F00BC8303 /* Main.storyboard */; };
 		AA2CDF85260E778F00BC8303 /* Wagr_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF83260E778F00BC8303 /* Wagr_Assignment.xcdatamodeld */; };
 		AA2CDF87260E779300BC8303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2CDF86260E779300BC8303 /* Assets.xcassets */; };
@@ -19,10 +20,42 @@
 		AA2CDFC0260E8DAF00BC8303 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFBF260E8DAF00BC8303 /* NetworkManager.swift */; };
 		AA2CDFC1260E8DAF00BC8303 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFBF260E8DAF00BC8303 /* NetworkManager.swift */; };
 		AA2CDFCC260E8E1A00BC8303 /* Team+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFC8260E8E1A00BC8303 /* Team+CoreDataClass.swift */; };
-		AA2CDFCD260E8E1A00BC8303 /* Team+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFC9260E8E1A00BC8303 /* Team+CoreDataProperties.swift */; };
 		AA2CDFCE260E8E1A00BC8303 /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFCA260E8E1A00BC8303 /* Game+CoreDataClass.swift */; };
-		AA2CDFCF260E8E1A00BC8303 /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFCB260E8E1A00BC8303 /* Game+CoreDataProperties.swift */; };
 		AA703E57260E91320037519B /* CodingUserInfoKey+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703E56260E91320037519B /* CodingUserInfoKey+Context.swift */; };
+		AA703E88260E96EF0037519B /* Team+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703E86260E96EF0037519B /* Team+CoreDataProperties.swift */; };
+		AA703E89260E96EF0037519B /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703E87260E96EF0037519B /* Game+CoreDataProperties.swift */; };
+		AA703E95260EBD0C0037519B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703E94260EBD0C0037519B /* NetworkError.swift */; };
+		AA703E9F260EC55D0037519B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703E94260EBD0C0037519B /* NetworkError.swift */; };
+		AA703EAA260EC5720037519B /* Formatter+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703EA9260EC5720037519B /* Formatter+ISO8601.swift */; };
+		AA703EBC260EC8170037519B /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703EBA260EC8170037519B /* GameCell.swift */; };
+		AA703EBD260EC8170037519B /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA703EBB260EC8170037519B /* GameCell.xib */; };
+		AA703EC6260ECBD30037519B /* CoreDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703EC5260ECBD30037519B /* CoreDataContainer.swift */; };
+		AA703ECE260F979E0037519B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703ECD260F979E0037519B /* CoreDataManager.swift */; };
+		AA703ED7260FA9520037519B /* TeamId.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703ED6260FA9520037519B /* TeamId.swift */; };
+		AA703EE2260FC7C70037519B /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703EE1260FC7C70037519B /* Cacheable.swift */; };
+		AA703EE7260FC7FE0037519B /* Game+Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703EE6260FC7FE0037519B /* Game+Cacheable.swift */; };
+		AA703F0B260FCE4E0037519B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA703F06260FCE4E0037519B /* Localizable.strings */; };
+		AA703F0C260FCE4E0037519B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA703F09260FCE4E0037519B /* Localizable.strings */; };
+		AA703F12260FCEFA0037519B /* NetworkReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703F11260FCEFA0037519B /* NetworkReachabilityService.swift */; };
+		AAA005D126112D2D00D97648 /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA005D026112D2D00D97648 /* DateHeader.swift */; };
+		AAA005D626112E5D00D97648 /* UIFont+Wagr.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA005D526112E5D00D97648 /* UIFont+Wagr.swift */; };
+		AAF8926A260FFA750019C10D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF89269260FFA750019C10D /* UIColor+Hex.swift */; };
+		AAF89270260FFCD00019C10D /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8926F260FFCD00019C10D /* GameViewModel.swift */; };
+		AAF8927B2610017F0019C10D /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8927A2610017F0019C10D /* TeamViewModel.swift */; };
+		AAF89280261027080019C10D /* UIColor+Wagr.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8927F261027080019C10D /* UIColor+Wagr.swift */; };
+		AAF892852610274F0019C10D /* UIImage+Wagr.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF892842610274F0019C10D /* UIImage+Wagr.swift */; };
+		AAF8928D2610FEB20019C10D /* Date+Timezone.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8928C2610FEB20019C10D /* Date+Timezone.swift */; };
+		AAF8929B261109DF0019C10D /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAF89296261109DF0019C10D /* Quicksand-Medium.ttf */; };
+		AAF8929C261109DF0019C10D /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAF89297261109DF0019C10D /* Quicksand-Bold.ttf */; };
+		AAF8929D261109DF0019C10D /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAF89298261109DF0019C10D /* Quicksand-SemiBold.ttf */; };
+		AAF8929E261109DF0019C10D /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAF89299261109DF0019C10D /* Quicksand-Regular.ttf */; };
+		AAF8929F261109DF0019C10D /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAF8929A261109DF0019C10D /* Quicksand-Light.ttf */; };
+		AAF892AF26111BF80019C10D /* GameSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF892AE26111BF80019C10D /* GameSorter.swift */; };
+		AAF892B426111DF90019C10D /* Calendar+DaysBetween.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF892B326111DF90019C10D /* Calendar+DaysBetween.swift */; };
+		AAF892B9261121400019C10D /* Date+FakeCurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF892B8261121400019C10D /* Date+FakeCurrentDate.swift */; };
+		AAF892BE261125A20019C10D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAF892BD261125A20019C10D /* GoogleService-Info.plist */; };
+		BAF955F8D8BF36245417EC8B /* Pods_Wagr_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78C2F4088EE9C5E7FAE745F /* Pods_Wagr_Assignment.framework */; };
+		FFCFBFA56E7EB33613CC1483 /* Pods_Wagr_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B831BDD4BBB8BA6CD7B7696 /* Pods_Wagr_AssignmentTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,14 +76,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38926895E1A1C112CF83546D /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F9D3761A40E4965AD7A180 /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5B831BDD4BBB8BA6CD7B7696 /* Pods_Wagr_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wagr_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8820E4D8D119085FABBA9522 /* Pods-Wagr-AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-AssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-Wagr-AssignmentTests/Pods-Wagr-AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		A0D9CD3BF792FBCD46E70F42 /* Pods-Wagr-AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-AssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Wagr-AssignmentTests/Pods-Wagr-AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A33CE3B9C8FC1115244A08A1 /* Pods-Wagr-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-Assignment.release.xcconfig"; path = "Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		AA2CDF77260E778F00BC8303 /* Wagr-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wagr-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2CDF7A260E778F00BC8303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA2CDF7C260E778F00BC8303 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA2CDF7E260E778F00BC8303 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA2CDF81260E778F00BC8303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA2CDF7E260E778F00BC8303 /* BrowseGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseGamesViewController.swift; sourceTree = "<group>"; };
 		AA2CDF84260E778F00BC8303 /* Wagr_Assignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wagr_Assignment.xcdatamodel; sourceTree = "<group>"; };
 		AA2CDF86260E779300BC8303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AA2CDF89260E779300BC8303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA2CDF8B260E779300BC8303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA2CDF90260E779300BC8303 /* Wagr-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wagr-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2CDF94260E779300BC8303 /* Wagr_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wagr_AssignmentTests.swift; sourceTree = "<group>"; };
@@ -60,10 +97,44 @@
 		AA2CDFA1260E779300BC8303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA2CDFBF260E8DAF00BC8303 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AA2CDFC8260E8E1A00BC8303 /* Team+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Team+CoreDataClass.swift"; sourceTree = "<group>"; };
-		AA2CDFC9260E8E1A00BC8303 /* Team+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Team+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AA2CDFCA260E8E1A00BC8303 /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataClass.swift"; sourceTree = "<group>"; };
-		AA2CDFCB260E8E1A00BC8303 /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AA703E56260E91320037519B /* CodingUserInfoKey+Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+Context.swift"; sourceTree = "<group>"; };
+		AA703E86260E96EF0037519B /* Team+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Team+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AA703E87260E96EF0037519B /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AA703E94260EBD0C0037519B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		AA703EA9260EC5720037519B /* Formatter+ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+ISO8601.swift"; sourceTree = "<group>"; };
+		AA703EBA260EC8170037519B /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		AA703EBB260EC8170037519B /* GameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
+		AA703EC5260ECBD30037519B /* CoreDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataContainer.swift; sourceTree = "<group>"; };
+		AA703ECD260F979E0037519B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		AA703ED6260FA9520037519B /* TeamId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamId.swift; sourceTree = "<group>"; };
+		AA703EE1260FC7C70037519B /* Cacheable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cacheable.swift; sourceTree = "<group>"; };
+		AA703EE6260FC7FE0037519B /* Game+Cacheable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game+Cacheable.swift"; sourceTree = "<group>"; };
+		AA703EF9260FCDB00037519B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA703EFA260FCDB00037519B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA703F07260FCE4E0037519B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
+		AA703F0A260FCE4E0037519B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		AA703F11260FCEFA0037519B /* NetworkReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityService.swift; sourceTree = "<group>"; };
+		AAA005D026112D2D00D97648 /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
+		AAA005D526112E5D00D97648 /* UIFont+Wagr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Wagr.swift"; sourceTree = "<group>"; };
+		AAF89269260FFA750019C10D /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		AAF8926F260FFCD00019C10D /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		AAF8927A2610017F0019C10D /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
+		AAF8927F261027080019C10D /* UIColor+Wagr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Wagr.swift"; sourceTree = "<group>"; };
+		AAF892842610274F0019C10D /* UIImage+Wagr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Wagr.swift"; sourceTree = "<group>"; };
+		AAF8928C2610FEB20019C10D /* Date+Timezone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Timezone.swift"; sourceTree = "<group>"; };
+		AAF89296261109DF0019C10D /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		AAF89297261109DF0019C10D /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		AAF89298261109DF0019C10D /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
+		AAF89299261109DF0019C10D /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		AAF8929A261109DF0019C10D /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		AAF892AE26111BF80019C10D /* GameSorter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSorter.swift; sourceTree = "<group>"; };
+		AAF892B326111DF90019C10D /* Calendar+DaysBetween.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+DaysBetween.swift"; sourceTree = "<group>"; };
+		AAF892B8261121400019C10D /* Date+FakeCurrentDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FakeCurrentDate.swift"; sourceTree = "<group>"; };
+		AAF892BD261125A20019C10D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AE76E79EA7FC44BB67706E18 /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C78C2F4088EE9C5E7FAE745F /* Pods_Wagr_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wagr_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8ECE39B6E71CAFFF5B0000 /* Pods-Wagr-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF955F8D8BF36245417EC8B /* Pods_Wagr_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCFBFA56E7EB33613CC1483 /* Pods_Wagr_AssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,12 +158,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B886BF0A8C2E17CD13BAC5E /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		201F5A209EA24D25950E5BFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C78C2F4088EE9C5E7FAE745F /* Pods_Wagr_Assignment.framework */,
+				38926895E1A1C112CF83546D /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework */,
+				5B831BDD4BBB8BA6CD7B7696 /* Pods_Wagr_AssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AA2CDF6E260E778F00BC8303 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +182,8 @@
 				AA2CDF93260E779300BC8303 /* Wagr-AssignmentTests */,
 				AA2CDF9E260E779300BC8303 /* Wagr-AssignmentUITests */,
 				AA2CDF78260E778F00BC8303 /* Products */,
+				F1EC1879EE5C1B8EBF0789CB /* Pods */,
+				201F5A209EA24D25950E5BFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,10 +200,13 @@
 		AA2CDF79260E778F00BC8303 /* Wagr-Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				AA703E55260E911B0037519B /* Extensions */,
-				AA2CDFBE260E8D8900BC8303 /* Networking */,
-				AA2CDFB7260E8B7500BC8303 /* CoreData */,
+				AAA005C326112C6D00D97648 /* Common */,
+				AA703F10260FCE920037519B /* Components */,
+				AA703ED5260FA94B0037519B /* Models */,
 				AA2CDFB6260E8B6300BC8303 /* ViewControllers */,
+				AA2CDFBE260E8D8900BC8303 /* Networking */,
+				AAF8926E260FFCC20019C10D /* ViewModels */,
+				AA2CDFB7260E8B7500BC8303 /* CoreData */,
 				AA2CDFB5260E8B4700BC8303 /* UI */,
 				AA2CDFB4260E8B3A00BC8303 /* Resources */,
 				AA2CDFB3260E8B3400BC8303 /* App */,
@@ -156,6 +245,10 @@
 		AA2CDFB4260E8B3A00BC8303 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AAF892BD261125A20019C10D /* GoogleService-Info.plist */,
+				AAF89291261109C50019C10D /* Fonts */,
+				AA703F08260FCE4E0037519B /* en.lproj */,
+				AA703F05260FCE4E0037519B /* es.lproj */,
 				AA2CDF86260E779300BC8303 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -173,7 +266,7 @@
 		AA2CDFB6260E8B6300BC8303 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AA2CDF7E260E778F00BC8303 /* ViewController.swift */,
+				AA2CDF7E260E778F00BC8303 /* BrowseGamesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -181,11 +274,13 @@
 		AA2CDFB7260E8B7500BC8303 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				AA703E86260E96EF0037519B /* Team+CoreDataProperties.swift */,
+				AA703E87260E96EF0037519B /* Game+CoreDataProperties.swift */,
 				AA2CDFC8260E8E1A00BC8303 /* Team+CoreDataClass.swift */,
-				AA2CDFC9260E8E1A00BC8303 /* Team+CoreDataProperties.swift */,
 				AA2CDFCA260E8E1A00BC8303 /* Game+CoreDataClass.swift */,
-				AA2CDFCB260E8E1A00BC8303 /* Game+CoreDataProperties.swift */,
 				AA2CDF83260E778F00BC8303 /* Wagr_Assignment.xcdatamodeld */,
+				AA703ECD260F979E0037519B /* CoreDataManager.swift */,
+				AA703EE6260FC7FE0037519B /* Game+Cacheable.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -193,6 +288,7 @@
 		AA2CDFBE260E8D8900BC8303 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				AA703E94260EBD0C0037519B /* NetworkError.swift */,
 				AA2CDFBF260E8DAF00BC8303 /* NetworkManager.swift */,
 			);
 			path = Networking;
@@ -202,8 +298,120 @@
 			isa = PBXGroup;
 			children = (
 				AA703E56260E91320037519B /* CodingUserInfoKey+Context.swift */,
+				AA703EA9260EC5720037519B /* Formatter+ISO8601.swift */,
+				AAF89269260FFA750019C10D /* UIColor+Hex.swift */,
+				AAF8927F261027080019C10D /* UIColor+Wagr.swift */,
+				AAF892842610274F0019C10D /* UIImage+Wagr.swift */,
+				AAF8928C2610FEB20019C10D /* Date+Timezone.swift */,
+				AAF892B326111DF90019C10D /* Calendar+DaysBetween.swift */,
+				AAF892B8261121400019C10D /* Date+FakeCurrentDate.swift */,
+				AAA005D526112E5D00D97648 /* UIFont+Wagr.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AA703EAE260EC7EB0037519B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AA703EBA260EC8170037519B /* GameCell.swift */,
+				AA703EBB260EC8170037519B /* GameCell.xib */,
+				AAA005D026112D2D00D97648 /* DateHeader.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AA703EC4260ECBC60037519B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AA703EC5260ECBD30037519B /* CoreDataContainer.swift */,
+				AA703EE1260FC7C70037519B /* Cacheable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AA703ED5260FA94B0037519B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA703ED6260FA9520037519B /* TeamId.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA703F05260FCE4E0037519B /* es.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				AA703F06260FCE4E0037519B /* Localizable.strings */,
+			);
+			path = es.lproj;
+			sourceTree = "<group>";
+		};
+		AA703F08260FCE4E0037519B /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				AA703F09260FCE4E0037519B /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		AA703F10260FCE920037519B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AA703EAE260EC7EB0037519B /* Cells */,
+				AA703F11260FCEFA0037519B /* NetworkReachabilityService.swift */,
+				AAF892AE26111BF80019C10D /* GameSorter.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AAA005C326112C6D00D97648 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AA703EC4260ECBC60037519B /* Protocols */,
+				AA703E55260E911B0037519B /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AAF8926E260FFCC20019C10D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AAF8926F260FFCD00019C10D /* GameViewModel.swift */,
+				AAF8927A2610017F0019C10D /* TeamViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AAF89291261109C50019C10D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AAF89292261109CF0019C10D /* Quicksand */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AAF89292261109CF0019C10D /* Quicksand */ = {
+			isa = PBXGroup;
+			children = (
+				AAF89297261109DF0019C10D /* Quicksand-Bold.ttf */,
+				AAF8929A261109DF0019C10D /* Quicksand-Light.ttf */,
+				AAF89296261109DF0019C10D /* Quicksand-Medium.ttf */,
+				AAF89299261109DF0019C10D /* Quicksand-Regular.ttf */,
+				AAF89298261109DF0019C10D /* Quicksand-SemiBold.ttf */,
+			);
+			path = Quicksand;
+			sourceTree = "<group>";
+		};
+		F1EC1879EE5C1B8EBF0789CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC8ECE39B6E71CAFFF5B0000 /* Pods-Wagr-Assignment.debug.xcconfig */,
+				A33CE3B9C8FC1115244A08A1 /* Pods-Wagr-Assignment.release.xcconfig */,
+				AE76E79EA7FC44BB67706E18 /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig */,
+				50F9D3761A40E4965AD7A180 /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig */,
+				A0D9CD3BF792FBCD46E70F42 /* Pods-Wagr-AssignmentTests.debug.xcconfig */,
+				8820E4D8D119085FABBA9522 /* Pods-Wagr-AssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,9 +421,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA2CDFA4260E779300BC8303 /* Build configuration list for PBXNativeTarget "Wagr-Assignment" */;
 			buildPhases = (
+				0F4DD07CF341F7D0E3EA490A /* [CP] Check Pods Manifest.lock */,
 				AA2CDF73260E778F00BC8303 /* Sources */,
 				AA2CDF74260E778F00BC8303 /* Frameworks */,
 				AA2CDF75260E778F00BC8303 /* Resources */,
+				3CFC972E958CC3628660C831 /* [CP] Embed Pods Frameworks */,
+				AAAB50DA2611266200AE4ED3 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -230,6 +441,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA2CDFA7260E779300BC8303 /* Build configuration list for PBXNativeTarget "Wagr-AssignmentTests" */;
 			buildPhases = (
+				5D8B01CE634DCA611B78A700 /* [CP] Check Pods Manifest.lock */,
 				AA2CDF8C260E779300BC8303 /* Sources */,
 				AA2CDF8D260E779300BC8303 /* Frameworks */,
 				AA2CDF8E260E779300BC8303 /* Resources */,
@@ -248,9 +460,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA2CDFAA260E779300BC8303 /* Build configuration list for PBXNativeTarget "Wagr-AssignmentUITests" */;
 			buildPhases = (
+				3566DD1992D3A7E6EF8F583E /* [CP] Check Pods Manifest.lock */,
 				AA2CDF97260E779300BC8303 /* Sources */,
 				AA2CDF98260E779300BC8303 /* Frameworks */,
 				AA2CDF99260E779300BC8303 /* Resources */,
+				6D1D9DB309E11A2024095A4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,6 +505,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = AA2CDF6E260E778F00BC8303;
 			productRefGroup = AA2CDF78260E778F00BC8303 /* Products */;
@@ -309,9 +524,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF8929D261109DF0019C10D /* Quicksand-SemiBold.ttf in Resources */,
+				AA703F0B260FCE4E0037519B /* Localizable.strings in Resources */,
+				AA703F0C260FCE4E0037519B /* Localizable.strings in Resources */,
+				AAF8929B261109DF0019C10D /* Quicksand-Medium.ttf in Resources */,
+				AAF8929F261109DF0019C10D /* Quicksand-Light.ttf in Resources */,
+				AAF892BE261125A20019C10D /* GoogleService-Info.plist in Resources */,
 				AA2CDF8A260E779300BC8303 /* LaunchScreen.storyboard in Resources */,
 				AA2CDF87260E779300BC8303 /* Assets.xcassets in Resources */,
 				AA2CDF82260E778F00BC8303 /* Main.storyboard in Resources */,
+				AA703EBD260EC8170037519B /* GameCell.xib in Resources */,
+				AAF8929C261109DF0019C10D /* Quicksand-Bold.ttf in Resources */,
+				AAF8929E261109DF0019C10D /* Quicksand-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,21 +555,164 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F4DD07CF341F7D0E3EA490A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wagr-Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3566DD1992D3A7E6EF8F583E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wagr-Assignment-Wagr-AssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CFC972E958CC3628660C831 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D8B01CE634DCA611B78A700 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wagr-AssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D1D9DB309E11A2024095A4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAAB50DA2611266200AE4ED3 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA2CDF73260E778F00BC8303 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AA2CDFCC260E8E1A00BC8303 /* Team+CoreDataClass.swift in Sources */,
+				AAF892B426111DF90019C10D /* Calendar+DaysBetween.swift in Sources */,
 				AA2CDFCE260E8E1A00BC8303 /* Game+CoreDataClass.swift in Sources */,
-				AA2CDF7F260E778F00BC8303 /* ViewController.swift in Sources */,
+				AAA005D126112D2D00D97648 /* DateHeader.swift in Sources */,
+				AA703EBC260EC8170037519B /* GameCell.swift in Sources */,
+				AAF8927B2610017F0019C10D /* TeamViewModel.swift in Sources */,
+				AAF892AF26111BF80019C10D /* GameSorter.swift in Sources */,
+				AA703ECE260F979E0037519B /* CoreDataManager.swift in Sources */,
+				AAF89280261027080019C10D /* UIColor+Wagr.swift in Sources */,
+				AA703EE2260FC7C70037519B /* Cacheable.swift in Sources */,
+				AA2CDF7F260E778F00BC8303 /* BrowseGamesViewController.swift in Sources */,
+				AAF8928D2610FEB20019C10D /* Date+Timezone.swift in Sources */,
 				AA2CDF85260E778F00BC8303 /* Wagr_Assignment.xcdatamodeld in Sources */,
+				AA703F12260FCEFA0037519B /* NetworkReachabilityService.swift in Sources */,
 				AA703E57260E91320037519B /* CodingUserInfoKey+Context.swift in Sources */,
-				AA2CDFCD260E8E1A00BC8303 /* Team+CoreDataProperties.swift in Sources */,
+				AAA005D626112E5D00D97648 /* UIFont+Wagr.swift in Sources */,
+				AAF892B9261121400019C10D /* Date+FakeCurrentDate.swift in Sources */,
+				AAF8926A260FFA750019C10D /* UIColor+Hex.swift in Sources */,
+				AA703E89260E96EF0037519B /* Game+CoreDataProperties.swift in Sources */,
 				AA2CDFC0260E8DAF00BC8303 /* NetworkManager.swift in Sources */,
 				AA2CDF7B260E778F00BC8303 /* AppDelegate.swift in Sources */,
 				AA2CDF7D260E778F00BC8303 /* SceneDelegate.swift in Sources */,
-				AA2CDFCF260E8E1A00BC8303 /* Game+CoreDataProperties.swift in Sources */,
+				AA703ED7260FA9520037519B /* TeamId.swift in Sources */,
+				AA703E95260EBD0C0037519B /* NetworkError.swift in Sources */,
+				AAF892852610274F0019C10D /* UIImage+Wagr.swift in Sources */,
+				AA703E88260E96EF0037519B /* Team+CoreDataProperties.swift in Sources */,
+				AA703EC6260ECBD30037519B /* CoreDataContainer.swift in Sources */,
+				AA703EE7260FC7FE0037519B /* Game+Cacheable.swift in Sources */,
+				AA703EAA260EC5720037519B /* Formatter+ISO8601.swift in Sources */,
+				AAF89270260FFCD00019C10D /* GameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +720,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA703E9F260EC55D0037519B /* NetworkError.swift in Sources */,
 				AA2CDFC1260E8DAF00BC8303 /* NetworkManager.swift in Sources */,
 				AA2CDF95260E779300BC8303 /* Wagr_AssignmentTests.swift in Sources */,
 			);
@@ -385,7 +753,7 @@
 		AA2CDF80260E778F00BC8303 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AA2CDF81260E778F00BC8303 /* Base */,
+				AA703EFA260FCDB00037519B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -393,9 +761,25 @@
 		AA2CDF88260E779300BC8303 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AA2CDF89260E779300BC8303 /* Base */,
+				AA703EF9260FCDB00037519B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AA703F06260FCE4E0037519B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA703F07260FCE4E0037519B /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		AA703F09260FCE4E0037519B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA703F0A260FCE4E0037519B /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -405,6 +789,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -452,7 +837,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -466,6 +851,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -507,7 +893,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -519,17 +905,19 @@
 		};
 		AA2CDFA5260E779300BC8303 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8ECE39B6E71CAFFF5B0000 /* Pods-Wagr-Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MAW8P85Q68;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = RVXC678BN2;
 				INFOPLIST_FILE = "Wagr-Assignment/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.stevenandrews.Wagr-Assignment";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevenandrews.Wagr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -538,17 +926,18 @@
 		};
 		AA2CDFA6260E779300BC8303 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A33CE3B9C8FC1115244A08A1 /* Pods-Wagr-Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MAW8P85Q68;
+				DEVELOPMENT_TEAM = RVXC678BN2;
 				INFOPLIST_FILE = "Wagr-Assignment/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.stevenandrews.Wagr-Assignment";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevenandrews.Wagr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -557,6 +946,7 @@
 		};
 		AA2CDFA8260E779300BC8303 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D9CD3BF792FBCD46E70F42 /* Pods-Wagr-AssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -579,6 +969,7 @@
 		};
 		AA2CDFA9260E779300BC8303 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8820E4D8D119085FABBA9522 /* Pods-Wagr-AssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -601,6 +992,7 @@
 		};
 		AA2CDFAB260E779300BC8303 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE76E79EA7FC44BB67706E18 /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -621,6 +1013,7 @@
 		};
 		AA2CDFAC260E779300BC8303 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50F9D3761A40E4965AD7A180 /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
