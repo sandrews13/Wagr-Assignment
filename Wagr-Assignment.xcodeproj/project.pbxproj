@@ -39,6 +39,9 @@
 		AA703F12260FCEFA0037519B /* NetworkReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703F11260FCEFA0037519B /* NetworkReachabilityService.swift */; };
 		AAA005D126112D2D00D97648 /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA005D026112D2D00D97648 /* DateHeader.swift */; };
 		AAA005D626112E5D00D97648 /* UIFont+Wagr.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA005D526112E5D00D97648 /* UIFont+Wagr.swift */; };
+		AAA005DC261137FE00D97648 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA005DA261137FE00D97648 /* DateCollectionViewCell.swift */; };
+		AAA005DD261137FE00D97648 /* DateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA005DB261137FE00D97648 /* DateCollectionViewCell.xib */; };
+		AAA005E22611429100D97648 /* DateCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA005E12611429100D97648 /* DateCollectionView.swift */; };
 		AAF8926A260FFA750019C10D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF89269260FFA750019C10D /* UIColor+Hex.swift */; };
 		AAF89270260FFCD00019C10D /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8926F260FFCD00019C10D /* GameViewModel.swift */; };
 		AAF8927B2610017F0019C10D /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8927A2610017F0019C10D /* TeamViewModel.swift */; };
@@ -117,6 +120,9 @@
 		AA703F11260FCEFA0037519B /* NetworkReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityService.swift; sourceTree = "<group>"; };
 		AAA005D026112D2D00D97648 /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
 		AAA005D526112E5D00D97648 /* UIFont+Wagr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Wagr.swift"; sourceTree = "<group>"; };
+		AAA005DA261137FE00D97648 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		AAA005DB261137FE00D97648 /* DateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCollectionViewCell.xib; sourceTree = "<group>"; };
+		AAA005E12611429100D97648 /* DateCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionView.swift; sourceTree = "<group>"; };
 		AAF89269260FFA750019C10D /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		AAF8926F260FFCD00019C10D /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		AAF8927A2610017F0019C10D /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
@@ -316,6 +322,8 @@
 				AA703EBA260EC8170037519B /* GameCell.swift */,
 				AA703EBB260EC8170037519B /* GameCell.xib */,
 				AAA005D026112D2D00D97648 /* DateHeader.swift */,
+				AAA005DA261137FE00D97648 /* DateCollectionViewCell.swift */,
+				AAA005DB261137FE00D97648 /* DateCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -359,6 +367,7 @@
 				AA703EAE260EC7EB0037519B /* Cells */,
 				AA703F11260FCEFA0037519B /* NetworkReachabilityService.swift */,
 				AAF892AE26111BF80019C10D /* GameSorter.swift */,
+				AAA005E12611429100D97648 /* DateCollectionView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -533,6 +542,7 @@
 				AA2CDF8A260E779300BC8303 /* LaunchScreen.storyboard in Resources */,
 				AA2CDF87260E779300BC8303 /* Assets.xcassets in Resources */,
 				AA2CDF82260E778F00BC8303 /* Main.storyboard in Resources */,
+				AAA005DD261137FE00D97648 /* DateCollectionViewCell.xib in Resources */,
 				AA703EBD260EC8170037519B /* GameCell.xib in Resources */,
 				AAF8929C261109DF0019C10D /* Quicksand-Bold.ttf in Resources */,
 				AAF8929E261109DF0019C10D /* Quicksand-Regular.ttf in Resources */,
@@ -706,6 +716,8 @@
 				AA2CDF7B260E778F00BC8303 /* AppDelegate.swift in Sources */,
 				AA2CDF7D260E778F00BC8303 /* SceneDelegate.swift in Sources */,
 				AA703ED7260FA9520037519B /* TeamId.swift in Sources */,
+				AAA005DC261137FE00D97648 /* DateCollectionViewCell.swift in Sources */,
+				AAA005E22611429100D97648 /* DateCollectionView.swift in Sources */,
 				AA703E95260EBD0C0037519B /* NetworkError.swift in Sources */,
 				AAF892852610274F0019C10D /* UIImage+Wagr.swift in Sources */,
 				AA703E88260E96EF0037519B /* Team+CoreDataProperties.swift in Sources */,

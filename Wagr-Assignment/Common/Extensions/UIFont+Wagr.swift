@@ -19,4 +19,14 @@ extension UIFont {
         
         return font
     }
+    
+    static func quicksandMedium(pointSize: CGFloat) -> UIFont {
+        
+        guard let font = UIFont(name: "Quicksand-Medium", size: pointSize) else {
+            os_log(.error, "Error: Quicksand-Medium font is missing.")
+            return UIFont.systemFont(ofSize: pointSize, weight: .regular)
+        }
+        
+        return font
+    }
 }

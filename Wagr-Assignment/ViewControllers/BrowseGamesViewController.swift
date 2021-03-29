@@ -14,6 +14,8 @@ class BrowseGamesViewController: UIViewController {
 
     // MARK: - IBOutlets
     
+    @IBOutlet private weak var collectionView: UICollectionView!
+    @IBOutlet private weak var collectionViewTop: NSLayoutConstraint!
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var loader: UIActivityIndicatorView!
     
@@ -22,6 +24,8 @@ class BrowseGamesViewController: UIViewController {
     private enum Constants {
         static let tableViewRowHeight: CGFloat = 44.0
         static let offlineImageSize: CGFloat = 24.0
+        
+        static let cellOriginYThreshold: CGFloat = 180.0
     }
     
     // MARK: - Private Properties
@@ -31,6 +35,8 @@ class BrowseGamesViewController: UIViewController {
             gameSorter = GameSorter(games: games)
         }
     }
+    private var activeSection = 0
+    private var changingSection = false
     private var gameSorter = GameSorter(games: [])
     private var fetchingGames = false
     private lazy var offlineIndicator: UIBarButtonItem = {
@@ -64,13 +70,15 @@ class BrowseGamesViewController: UIViewController {
     // MARK: - Private Methods
     
     private func registerCells() {
+        collectionView.register(UINib(nibName: DateCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DateCollectionViewCell.identifier)
+        
         tableView.register(UINib(nibName: GameCell.identifier, bundle: nil), forCellReuseIdentifier: GameCell.identifier)
-        tableView.register(DateHeader.self, forHeaderFooterViewReuseIdentifier: DateHeader.identifier)
+        tableView.register(DateHeader.self, forCellReuseIdentifier: DateHeader.identifier)
     }
     
     private func configureUI() {
         
-        self.tableView.setValue(UIColor.background , forKey: "tableHeaderBackgroundColor")
+        tableView.setValue(UIColor.background , forKey: "tableHeaderBackgroundColor")
         
         // Nav Bar Appearance
         let defaultLargeFont = UIFont.preferredFont(forTextStyle: .largeTitle)
@@ -120,6 +128,7 @@ class BrowseGamesViewController: UIViewController {
             guard let self = self else { return }
             self.games = games
             self.tableView.reloadData()
+            self.collectionView.reloadData()
             self.loader.stopAnimating()
             self.fetchingGames = false
         }
@@ -157,12 +166,15 @@ class BrowseGamesViewController: UIViewController {
 extension BrowseGamesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        guard indexPath.row > 0 else {
+            return headerCell(for: indexPath.section)
+        }
+        let row = indexPath.row - 1
         guard let gamesOnDay = gameSorter.sortedGames[indexPath.section] else {
             return UITableViewCell()
         }
         
-        let game = gamesOnDay[indexPath.row]
+        let game = gamesOnDay[row]
         let cell = tableView.dequeueReusableCell(withIdentifier: GameCell.identifier, for: indexPath) as! GameCell
         cell.update(with: game)
         
@@ -173,11 +185,10 @@ extension BrowseGamesViewController: UITableViewDelegate, UITableViewDataSource 
         guard let games = gameSorter.sortedGames[section] else {
             return 0
         }
-        return games.count
+        return games.count + 1
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        print(gameSorter.sortedGames.count)
         return gameSorter.sortedGames.count
     }
     
@@ -185,22 +196,78 @@ extension BrowseGamesViewController: UITableViewDelegate, UITableViewDataSource 
         return UITableView.automaticDimension
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return UITableView.automaticDimension
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: DateHeader.identifier) as! DateHeader
-        header.update(title: Date.stringforDaysInFuture(section))
-
-        return header
-    }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
     
+    private func headerCell(for section: Int) -> UITableViewCell {
+        let header = tableView.dequeueReusableCell(withIdentifier: DateHeader.identifier) as! DateHeader
+        header.update(title: Date.stringforDaysInFuture(section))
+        
+        return header
+    }
     
+    private func scrollTableView(to section: Int) {
+        self.changingSection = true
+        DispatchQueue.main.async {
+            let indexPath = IndexPath(item: 1, section: section)
+            self.tableView.scrollToRow(at: indexPath, at: .top, animated: false)
+        }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard scrollView == tableView else {
+            return
+        }
+        var yOffset = (-1)*scrollView.contentOffset.y
+        if yOffset < 0 {
+            yOffset = 0
+        }
+        collectionViewTop.constant = yOffset
+        
+        if tableView.panGestureRecognizer.state == .possible, changingSection {
+            changingSection = false
+            return
+        }
+
+        if let visibleIndex = tableView.indexPathsForVisibleRows?.first {
+            if visibleIndex.section != activeSection {
+                activeSection = visibleIndex.section
+                reloadCollectionView()
+            }
+        }
+    }
+    
+}
+
+// MARK: - CollectionView
+
+extension BrowseGamesViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DateCollectionViewCell.identifier, for: indexPath) as! DateCollectionViewCell
+        cell.update(text: Date.stringforDaysInFuture(indexPath.row), active: activeSection == indexPath.row)
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return gameSorter.sortedGames.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        activeSection = indexPath.row
+        reloadCollectionView()
+        scrollTableView(to: activeSection)
+    }
+    
+    private func reloadCollectionView() {
+        let indexPath = IndexPath(item: activeSection, section: 0)
+        collectionView.reloadSections(IndexSet(integer: 0))
+        DispatchQueue.main.async {
+            self.collectionView.scrollToItem(at: indexPath, at: .left, animated: true)
+        }
+    }
     
 }
 

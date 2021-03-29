@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DateHeader: UITableViewHeaderFooterView {
+class DateHeader: UITableViewCell {
 
     // MARK: - Static Properties
     
@@ -19,7 +19,8 @@ class DateHeader: UITableViewHeaderFooterView {
         static let fontSize: CGFloat = 24
         
         static let horizontalSpace: CGFloat = 16
-        static let verticalSpace: CGFloat = 16
+        static let topSpace: CGFloat = 32
+        static let bottomSpace: CGFloat = 12
     }
     
     // MARK: - Private Properties
@@ -35,8 +36,8 @@ class DateHeader: UITableViewHeaderFooterView {
     
     // MARK: - Initializers
 
-    override init(reuseIdentifier: String?) {
-        super.init(reuseIdentifier: reuseIdentifier)
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: .default, reuseIdentifier: reuseIdentifier)
         configureUI()
     }
     
@@ -65,14 +66,9 @@ class DateHeader: UITableViewHeaderFooterView {
         NSLayoutConstraint.activate([
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Constants.horizontalSpace),
             titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Constants.horizontalSpace),
-            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Constants.verticalSpace),
-            titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -Constants.verticalSpace),
+            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Constants.topSpace),
+            titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -Constants.bottomSpace),
         ])
-    }
-    
-    @available(iOS 14.0, *)
-    override func updateConfiguration(using state: UIViewConfigurationState) {
-        backgroundConfiguration = UIBackgroundConfiguration.clear()
     }
 
 }
