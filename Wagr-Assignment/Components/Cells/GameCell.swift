@@ -22,6 +22,8 @@ class GameCell: UITableViewCell {
     @IBOutlet private var homeCityLabel: UILabel!
     @IBOutlet private var homeSpreadLabel: UILabel!
     
+    @IBOutlet private var vsLabel: UILabel!
+    
     // Away Team
     @IBOutlet private var awayPrimary: UIView!
     @IBOutlet private var awaySecondary: UIView!
@@ -38,10 +40,18 @@ class GameCell: UITableViewCell {
     // MARK: - Constants
     
     private enum Constants {
+        // Shadow
         static let cornerRadius: CGFloat = 6.0
-        static let shadowRadius: CGFloat = 3.0
+        static let shadowRadius: CGFloat = 4.0
         static let shadowOpacity: Float = 0.4
         static let shadowOffset: CGSize = .zero
+        
+        // Fonts
+        static let spreadFontSize: CGFloat = 14
+        static let cityFontSize: CGFloat = 15
+        static let teamFontSize: CGFloat = 18
+        static let infoFontSize: CGFloat = 12
+        static let vsFontSize: CGFloat = 14
     }
     
     // MARK: - Static Properties
@@ -54,6 +64,39 @@ class GameCell: UITableViewCell {
         super.awakeFromNib()
         configureUI()
     }
+    
+    
+    private func configureUI() {
+        roundedView.layer.cornerRadius = Constants.cornerRadius
+        roundedView.clipsToBounds = true
+        makeRoundedAndShadowed(view: shadowView)
+        applyFonts()
+    }
+    
+    private func makeRoundedAndShadowed(view: UIView) {
+        view.layer.cornerRadius = Constants.cornerRadius
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOffset = Constants.shadowOffset
+        view.layer.shadowOpacity = Constants.shadowOpacity
+        view.layer.shadowRadius = Constants.shadowRadius
+    }
+    
+    private func applyFonts() {
+        homeSpreadLabel.font = UIFont.primaryFont(pointSize: Constants.spreadFontSize, weight: .regular)
+        awaySpreadLabel.font = UIFont.primaryFont(pointSize: Constants.spreadFontSize, weight: .regular)
+        homeCityLabel.font = UIFont.secondaryFont(pointSize: Constants.cityFontSize, weight: .medium)
+        awayCityLabel.font = UIFont.secondaryFont(pointSize: Constants.cityFontSize, weight: .medium)
+        homeNameLabel.font = UIFont.secondaryFont(pointSize: Constants.teamFontSize, weight: .black)
+        awayNameLabel.font = UIFont.secondaryFont(pointSize: Constants.teamFontSize, weight: .black)
+        leagueNameLabel.font = UIFont.secondaryFont(pointSize: Constants.infoFontSize, weight: .regular)
+        timeLabel.font = UIFont.secondaryFont(pointSize: Constants.infoFontSize, weight: .regular)
+        vsLabel.font = UIFont.primaryFont(pointSize: Constants.vsFontSize, weight: .medium)
+    }
+    
+}
+
+// MARK: - Extension: UI Updates
+extension GameCell {
     
     // MARK: - Internal Methods
     
@@ -71,6 +114,8 @@ class GameCell: UITableViewCell {
         leagueNameLabel.text = gameViewModel.league
         timeLabel.text = game.date.stringWithTimezone()
     }
+    
+    // MARK: - Private Functions
     
     private func updateHomeTeamUI(_ team: Team, with gameViewModel: GameViewModel) {
         let showCity = gameViewModel.showCity
@@ -95,21 +140,4 @@ class GameCell: UITableViewCell {
         awaySpreadLabel.text = gameViewModel.awaySpread
         awayCityLabel.isHidden = !showCity
     }
-    
-    // MARK: - Private Functions
-    
-    private func configureUI() {
-        roundedView.layer.cornerRadius = Constants.cornerRadius
-        roundedView.clipsToBounds = true
-        makeRoundedAndShadowed(view: shadowView)
-    }
-    
-    private func makeRoundedAndShadowed(view: UIView) {
-        view.layer.cornerRadius = Constants.cornerRadius
-        view.layer.shadowColor = UIColor.black.cgColor
-        view.layer.shadowOffset = Constants.shadowOffset
-        view.layer.shadowOpacity = Constants.shadowOpacity
-        view.layer.shadowRadius = Constants.shadowRadius
-    }
-    
 }

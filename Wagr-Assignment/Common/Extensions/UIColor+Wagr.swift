@@ -10,7 +10,11 @@ import UIKit
 // Colors specific to Wagr's theme
 extension UIColor {
     
-    static let foreground = UIColor(named: "foregroundColour")
-    static let background = UIColor(named: "backgroundColour")
+    // Force unwrap, we want to crash if these colours aren't in the bundle; something is wrong
+    static let foreground = UIColor(named: "foregroundColour")!
+    static let background = UIColor(named: "backgroundColour")!
+    
+    static let brandForeground = UIColor(named: "brandForeground")!
+    static let brandBackground = UIColor(named: "brandBackground")!
     
 }

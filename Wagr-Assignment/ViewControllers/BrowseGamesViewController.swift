@@ -156,7 +156,7 @@ class BrowseGamesViewController: UIViewController {
     }
     
     private func logAnalytics() {
-        Analytics.logEvent(AnalyticsEventScreenView, parameters: [AnalyticsParameterScreenName: "BrowseGamesViewController"])
+        AnalyticsManager.logScreenView(screenName: "BrowseGamesViewController")
     }
 
 }
@@ -166,10 +166,11 @@ class BrowseGamesViewController: UIViewController {
 extension BrowseGamesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard indexPath.row > 0 else {
+        let isFirstSection = (indexPath.section == 0)
+        guard indexPath.row > 0 || isFirstSection else {
             return headerCell(for: indexPath.section)
         }
-        let row = indexPath.row - 1
+        let row = indexPath.row - (isFirstSection ? 0 : 1)
         guard let gamesOnDay = gameSorter.sortedGames[indexPath.section] else {
             return UITableViewCell()
         }
@@ -185,7 +186,8 @@ extension BrowseGamesViewController: UITableViewDelegate, UITableViewDataSource 
         guard let games = gameSorter.sortedGames[section] else {
             return 0
         }
-        return games.count + 1
+        let shouldAddHeadingCell = (section > 0)
+        return games.count + (shouldAddHeadingCell ? 1 : 0)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -197,7 +199,8 @@ extension BrowseGamesViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let celebrationActionSheet = UIAlertController.celebrationActionSheet(host: self)
+        present(celebrationActionSheet, animated: true)
     }
     
     private func headerCell(for section: Int) -> UITableViewCell {

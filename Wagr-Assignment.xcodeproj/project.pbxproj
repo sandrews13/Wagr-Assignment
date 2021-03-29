@@ -41,7 +41,18 @@
 		AAA005D626112E5D00D97648 /* UIFont+Wagr.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA005D526112E5D00D97648 /* UIFont+Wagr.swift */; };
 		AAA005DC261137FE00D97648 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA005DA261137FE00D97648 /* DateCollectionViewCell.swift */; };
 		AAA005DD261137FE00D97648 /* DateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA005DB261137FE00D97648 /* DateCollectionViewCell.xib */; };
-		AAA005E22611429100D97648 /* DateCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA005E12611429100D97648 /* DateCollectionView.swift */; };
+		AAA005F62612416A00D97648 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAA005F02612416900D97648 /* Roboto-Bold.ttf */; };
+		AAA005F72612416A00D97648 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAA005F12612416A00D97648 /* Roboto-Medium.ttf */; };
+		AAA005F82612416A00D97648 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAA005F22612416A00D97648 /* Roboto-Black.ttf */; };
+		AAA005F92612416A00D97648 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAA005F32612416A00D97648 /* Roboto-Thin.ttf */; };
+		AAA005FA2612416A00D97648 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAA005F42612416A00D97648 /* Roboto-Light.ttf */; };
+		AAA005FB2612416A00D97648 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAA005F52612416A00D97648 /* Roboto-Regular.ttf */; };
+		AAB6D95226126F7B004A9337 /* AnimatedGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6D95126126F7B004A9337 /* AnimatedGradientLayer.swift */; };
+		AAB6D957261274BB004A9337 /* UIAlertController+Celebration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6D956261274BB004A9337 /* UIAlertController+Celebration.swift */; };
+		AAB6D95F26127718004A9337 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6D95E26127718004A9337 /* RoundImageView.swift */; };
+		AAB6D9642612797C004A9337 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6D9632612797C004A9337 /* AnalyticsManager.swift */; };
+		AAE2657E261261C800AFEF5F /* ModalCelebrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE2657C261261C800AFEF5F /* ModalCelebrationViewController.swift */; };
+		AAE2657F261261C800AFEF5F /* ModalCelebrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE2657D261261C800AFEF5F /* ModalCelebrationViewController.xib */; };
 		AAF8926A260FFA750019C10D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF89269260FFA750019C10D /* UIColor+Hex.swift */; };
 		AAF89270260FFCD00019C10D /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8926F260FFCD00019C10D /* GameViewModel.swift */; };
 		AAF8927B2610017F0019C10D /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8927A2610017F0019C10D /* TeamViewModel.swift */; };
@@ -122,7 +133,18 @@
 		AAA005D526112E5D00D97648 /* UIFont+Wagr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Wagr.swift"; sourceTree = "<group>"; };
 		AAA005DA261137FE00D97648 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 		AAA005DB261137FE00D97648 /* DateCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCollectionViewCell.xib; sourceTree = "<group>"; };
-		AAA005E12611429100D97648 /* DateCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionView.swift; sourceTree = "<group>"; };
+		AAA005F02612416900D97648 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		AAA005F12612416A00D97648 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		AAA005F22612416A00D97648 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		AAA005F32612416A00D97648 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		AAA005F42612416A00D97648 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		AAA005F52612416A00D97648 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		AAB6D95126126F7B004A9337 /* AnimatedGradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGradientLayer.swift; sourceTree = "<group>"; };
+		AAB6D956261274BB004A9337 /* UIAlertController+Celebration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Celebration.swift"; sourceTree = "<group>"; };
+		AAB6D95E26127718004A9337 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		AAB6D9632612797C004A9337 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		AAE2657C261261C800AFEF5F /* ModalCelebrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCelebrationViewController.swift; sourceTree = "<group>"; };
+		AAE2657D261261C800AFEF5F /* ModalCelebrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalCelebrationViewController.xib; sourceTree = "<group>"; };
 		AAF89269260FFA750019C10D /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		AAF8926F260FFCD00019C10D /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		AAF8927A2610017F0019C10D /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
@@ -273,6 +295,8 @@
 			isa = PBXGroup;
 			children = (
 				AA2CDF7E260E778F00BC8303 /* BrowseGamesViewController.swift */,
+				AAE2657C261261C800AFEF5F /* ModalCelebrationViewController.swift */,
+				AAE2657D261261C800AFEF5F /* ModalCelebrationViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -312,6 +336,7 @@
 				AAF892B326111DF90019C10D /* Calendar+DaysBetween.swift */,
 				AAF892B8261121400019C10D /* Date+FakeCurrentDate.swift */,
 				AAA005D526112E5D00D97648 /* UIFont+Wagr.swift */,
+				AAB6D956261274BB004A9337 /* UIAlertController+Celebration.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -367,7 +392,8 @@
 				AA703EAE260EC7EB0037519B /* Cells */,
 				AA703F11260FCEFA0037519B /* NetworkReachabilityService.swift */,
 				AAF892AE26111BF80019C10D /* GameSorter.swift */,
-				AAA005E12611429100D97648 /* DateCollectionView.swift */,
+				AAB6D95126126F7B004A9337 /* AnimatedGradientLayer.swift */,
+				AAB6D95E26127718004A9337 /* RoundImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -377,8 +403,22 @@
 			children = (
 				AA703EC4260ECBC60037519B /* Protocols */,
 				AA703E55260E911B0037519B /* Extensions */,
+				AAB6D9632612797C004A9337 /* AnalyticsManager.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		AAA005EF2612415E00D97648 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				AAA005F22612416A00D97648 /* Roboto-Black.ttf */,
+				AAA005F02612416900D97648 /* Roboto-Bold.ttf */,
+				AAA005F42612416A00D97648 /* Roboto-Light.ttf */,
+				AAA005F12612416A00D97648 /* Roboto-Medium.ttf */,
+				AAA005F52612416A00D97648 /* Roboto-Regular.ttf */,
+				AAA005F32612416A00D97648 /* Roboto-Thin.ttf */,
+			);
+			path = Roboto;
 			sourceTree = "<group>";
 		};
 		AAF8926E260FFCC20019C10D /* ViewModels */ = {
@@ -393,6 +433,7 @@
 		AAF89291261109C50019C10D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				AAA005EF2612415E00D97648 /* Roboto */,
 				AAF89292261109CF0019C10D /* Quicksand */,
 			);
 			path = Fonts;
@@ -533,16 +574,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA005F62612416A00D97648 /* Roboto-Bold.ttf in Resources */,
 				AAF8929D261109DF0019C10D /* Quicksand-SemiBold.ttf in Resources */,
+				AAA005F92612416A00D97648 /* Roboto-Thin.ttf in Resources */,
 				AA703F0B260FCE4E0037519B /* Localizable.strings in Resources */,
 				AA703F0C260FCE4E0037519B /* Localizable.strings in Resources */,
 				AAF8929B261109DF0019C10D /* Quicksand-Medium.ttf in Resources */,
+				AAA005F72612416A00D97648 /* Roboto-Medium.ttf in Resources */,
 				AAF8929F261109DF0019C10D /* Quicksand-Light.ttf in Resources */,
+				AAA005FA2612416A00D97648 /* Roboto-Light.ttf in Resources */,
 				AAF892BE261125A20019C10D /* GoogleService-Info.plist in Resources */,
 				AA2CDF8A260E779300BC8303 /* LaunchScreen.storyboard in Resources */,
 				AA2CDF87260E779300BC8303 /* Assets.xcassets in Resources */,
 				AA2CDF82260E778F00BC8303 /* Main.storyboard in Resources */,
+				AAA005F82612416A00D97648 /* Roboto-Black.ttf in Resources */,
 				AAA005DD261137FE00D97648 /* DateCollectionViewCell.xib in Resources */,
+				AAE2657F261261C800AFEF5F /* ModalCelebrationViewController.xib in Resources */,
+				AAA005FB2612416A00D97648 /* Roboto-Regular.ttf in Resources */,
 				AA703EBD260EC8170037519B /* GameCell.xib in Resources */,
 				AAF8929C261109DF0019C10D /* Quicksand-Bold.ttf in Resources */,
 				AAF8929E261109DF0019C10D /* Quicksand-Regular.ttf in Resources */,
@@ -693,20 +741,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAB6D9642612797C004A9337 /* AnalyticsManager.swift in Sources */,
 				AA2CDFCC260E8E1A00BC8303 /* Team+CoreDataClass.swift in Sources */,
 				AAF892B426111DF90019C10D /* Calendar+DaysBetween.swift in Sources */,
 				AA2CDFCE260E8E1A00BC8303 /* Game+CoreDataClass.swift in Sources */,
+				AAE2657E261261C800AFEF5F /* ModalCelebrationViewController.swift in Sources */,
 				AAA005D126112D2D00D97648 /* DateHeader.swift in Sources */,
 				AA703EBC260EC8170037519B /* GameCell.swift in Sources */,
 				AAF8927B2610017F0019C10D /* TeamViewModel.swift in Sources */,
 				AAF892AF26111BF80019C10D /* GameSorter.swift in Sources */,
 				AA703ECE260F979E0037519B /* CoreDataManager.swift in Sources */,
 				AAF89280261027080019C10D /* UIColor+Wagr.swift in Sources */,
+				AAB6D95226126F7B004A9337 /* AnimatedGradientLayer.swift in Sources */,
 				AA703EE2260FC7C70037519B /* Cacheable.swift in Sources */,
 				AA2CDF7F260E778F00BC8303 /* BrowseGamesViewController.swift in Sources */,
 				AAF8928D2610FEB20019C10D /* Date+Timezone.swift in Sources */,
 				AA2CDF85260E778F00BC8303 /* Wagr_Assignment.xcdatamodeld in Sources */,
 				AA703F12260FCEFA0037519B /* NetworkReachabilityService.swift in Sources */,
+				AAB6D957261274BB004A9337 /* UIAlertController+Celebration.swift in Sources */,
 				AA703E57260E91320037519B /* CodingUserInfoKey+Context.swift in Sources */,
 				AAA005D626112E5D00D97648 /* UIFont+Wagr.swift in Sources */,
 				AAF892B9261121400019C10D /* Date+FakeCurrentDate.swift in Sources */,
@@ -715,9 +767,9 @@
 				AA2CDFC0260E8DAF00BC8303 /* NetworkManager.swift in Sources */,
 				AA2CDF7B260E778F00BC8303 /* AppDelegate.swift in Sources */,
 				AA2CDF7D260E778F00BC8303 /* SceneDelegate.swift in Sources */,
+				AAB6D95F26127718004A9337 /* RoundImageView.swift in Sources */,
 				AA703ED7260FA9520037519B /* TeamId.swift in Sources */,
 				AAA005DC261137FE00D97648 /* DateCollectionViewCell.swift in Sources */,
-				AAA005E22611429100D97648 /* DateCollectionView.swift in Sources */,
 				AA703E95260EBD0C0037519B /* NetworkError.swift in Sources */,
 				AAF892852610274F0019C10D /* UIImage+Wagr.swift in Sources */,
 				AA703E88260E96EF0037519B /* Team+CoreDataProperties.swift in Sources */,
@@ -849,7 +901,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -905,7 +957,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

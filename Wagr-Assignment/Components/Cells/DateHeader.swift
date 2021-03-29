@@ -19,8 +19,8 @@ class DateHeader: UITableViewCell {
         static let fontSize: CGFloat = 24
         
         static let horizontalSpace: CGFloat = 16
-        static let topSpace: CGFloat = 32
-        static let bottomSpace: CGFloat = 12
+        static let topSpace: CGFloat = 48
+        static let bottomSpace: CGFloat = 0
     }
     
     // MARK: - Private Properties
@@ -28,7 +28,7 @@ class DateHeader: UITableViewCell {
     private var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.quicksandRegular(pointSize: Constants.fontSize)
+        label.font = UIFont.secondaryFont(pointSize: Constants.fontSize)
         label.backgroundColor = .clear
         
         return label

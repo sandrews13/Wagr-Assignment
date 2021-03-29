@@ -33,6 +33,10 @@ class GameViewModel {
             return NSLocalizedString("game-cell-no-spread", comment: "")
         }
         
+        if spread == "0" {
+            return spread
+        }
+        
         if !spread.hasPrefix("-") {
             spread = "+" + spread
         }
@@ -43,6 +47,10 @@ class GameViewModel {
     lazy var awaySpread: String = {
         guard var spread = game.spread else {
             return NSLocalizedString("game-cell-no-spread", comment: "")
+        }
+        
+        if spread == "0" {
+            return spread
         }
         
         if spread.hasPrefix("-") {

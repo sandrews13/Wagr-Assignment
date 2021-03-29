@@ -11,3 +11,5 @@
 "ok" = "OK";
 "today" = "Today";
 "tomorrow" = "Tomorrow";
+"confirmation-modal-title" = "Bet Confirmed";
+"confirmation-modal-message" = "Congrats on being one step closer to bragging rights";
