@@ -1,5 +1,5 @@
 
-# Wagr-Assignment
+# Wagr-Assignment - Native iOS
 ### Author: Steven Andrews
 
 ## Description 
@@ -16,8 +16,10 @@ This repo houses the take home assignment provided by Wagr.
 4. Run `pod install`
 5. Open `Wagr-Assignment.xcworkspace` with Xcode
 
-## Important Note
-The app pretends that today's date is Jan 21, 2021. The data provided by the API starts on this date, and ends on Jan 27, 2021. If the real current date is used then no games are ever displayed since they are all in the past. 
+## Important Notes
+* The app runs best on a physical device, and not the simulator. This is due to limitations in Apple's Networking framework that don't provide reliable network connectivity change notification on the simulator due to the differences in the network interface. When using the simulator the offline indicator will always be visible, but the data will still load and be refreshed live where possible.
+
+* The app pretends that today's date is Jan 21, 2021. The data provided by the API starts on this date, and ends on Jan 27, 2021. If the real current date is used then no games are ever displayed since they are all in the past. 
 
 # Features
 ## Multiple Celebration Styles
