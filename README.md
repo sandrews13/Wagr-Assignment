@@ -78,3 +78,6 @@ Accessibility was not optimized due to time constraints. Usually no functionalit
 
 ### Dynamic Text Sizing
 Usually an app will respond to the device's dynamic text size settings. In this case, this feature was skipped due to time constraints.
+
+### Unit/UI Tests
+I originally planned to take a TDD approach, and to ensure that each component area had clearly defined boundaries with abstract dependies that could be injected for unit test ease. However I discovered that time is a finite thing, and made the decision to forgo tests in favour of features, since the problem decision states this is meant to be a PoC. 
