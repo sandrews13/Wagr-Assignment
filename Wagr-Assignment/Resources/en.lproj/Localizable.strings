@@ -11,8 +11,10 @@
 "ok" = "OK";
 "today" = "Today";
 "tomorrow" = "Tomorrow";
+"games" = "Games";
 "confirmation-title" = "Bet Confirmed";
 "confirmation-message" = "Congrats on being one step closer to bragging rights";
 "confirmation-bet" = "Your Bet";
 "confirmation-bet-text" = "%@ to win";
 "confirmation-home-team" = "Home Team";
+"game-cell-label" = "%@ versus %@ %@";

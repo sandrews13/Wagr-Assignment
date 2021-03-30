@@ -86,6 +86,7 @@ class BrowseGamesViewController: UIViewController {
         tableView.setValue(UIColor.background , forKey: "tableHeaderBackgroundColor")
         
         // Nav Bar Appearance
+        self.title = NSLocalizedString("games", comment: "")
         let defaultLargeFont = UIFont.preferredFont(forTextStyle: .largeTitle)
         let defaultFont = UIFont.preferredFont(forTextStyle: .headline)
         let largeAttrs = [NSAttributedString.Key.font: UIFont(name: "Quicksand-Regular", size: defaultLargeFont.pointSize)!]

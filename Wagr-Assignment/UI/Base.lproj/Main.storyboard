@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-848" y="48"/>
         </scene>
-        <!--Games-->
+        <!--Localize Me-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="BrowseGamesViewController" customModule="Wagr_Assignment" customModuleProvider="target" sceneMemberID="viewController">
@@ -99,7 +99,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vOs-Xc-02j" secondAttribute="bottom" id="wXo-Zf-w2O"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Games" id="Ahx-F2-AOm"/>
+                    <navigationItem key="navigationItem" title="Localize Me" id="Ahx-F2-AOm"/>
                     <connections>
                         <outlet property="collectionView" destination="PI3-th-GUD" id="fqh-tj-4Zm"/>
                         <outlet property="collectionViewTop" destination="cSp-VP-Z1F" id="ByW-v3-w7S"/>

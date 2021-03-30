@@ -73,6 +73,14 @@ class GameCell: UITableViewCell {
         applyFonts()
     }
     
+    private func configureAccessibility(for game: Game, viewModel: GameViewModel) {
+        guard let home = game.homeTeam?.name, let away = game.awayTeam?.name else {
+            return
+        }
+        accessibilityTraits = .button
+        accessibilityLabel = String(format: NSLocalizedString("game-cell-label", comment: ""), home, away, viewModel.date(withMonth: true))
+    }
+    
     private func makeRoundedAndShadowed(view: UIView) {
         view.layer.cornerRadius = Constants.cornerRadius
         view.layer.shadowColor = UIColor.black.cgColor
@@ -122,6 +130,8 @@ extension GameCell {
             leagueIcon.tintColor = .brandedText
             
         }
+        
+        configureAccessibility(for: game, viewModel: gameViewModel)
     }
     
     // MARK: - Private Functions
