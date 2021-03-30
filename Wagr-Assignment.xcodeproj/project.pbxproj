@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B886BF0A8C2E17CD13BAC5E /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38926895E1A1C112CF83546D /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework */; };
 		AA2CDF7B260E778F00BC8303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF7A260E778F00BC8303 /* AppDelegate.swift */; };
 		AA2CDF7D260E778F00BC8303 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF7C260E778F00BC8303 /* SceneDelegate.swift */; };
 		AA2CDF7F260E778F00BC8303 /* BrowseGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF7E260E778F00BC8303 /* BrowseGamesViewController.swift */; };
@@ -70,8 +69,6 @@
 		AAF892B426111DF90019C10D /* Calendar+DaysBetween.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF892B326111DF90019C10D /* Calendar+DaysBetween.swift */; };
 		AAF892B9261121400019C10D /* Date+FakeCurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF892B8261121400019C10D /* Date+FakeCurrentDate.swift */; };
 		AAF892BE261125A20019C10D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAF892BD261125A20019C10D /* GoogleService-Info.plist */; };
-		BAF955F8D8BF36245417EC8B /* Pods_Wagr_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78C2F4088EE9C5E7FAE745F /* Pods_Wagr_Assignment.framework */; };
-		FFCFBFA56E7EB33613CC1483 /* Pods_Wagr_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B831BDD4BBB8BA6CD7B7696 /* Pods_Wagr_AssignmentTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,12 +89,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		38926895E1A1C112CF83546D /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50F9D3761A40E4965AD7A180 /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5B831BDD4BBB8BA6CD7B7696 /* Pods_Wagr_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wagr_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8820E4D8D119085FABBA9522 /* Pods-Wagr-AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-AssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-Wagr-AssignmentTests/Pods-Wagr-AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
-		A0D9CD3BF792FBCD46E70F42 /* Pods-Wagr-AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-AssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Wagr-AssignmentTests/Pods-Wagr-AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A33CE3B9C8FC1115244A08A1 /* Pods-Wagr-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-Assignment.release.xcconfig"; path = "Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		AA2CDF77260E778F00BC8303 /* Wagr-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wagr-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2CDF7A260E778F00BC8303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA2CDF7C260E778F00BC8303 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,9 +155,6 @@
 		AAF892B326111DF90019C10D /* Calendar+DaysBetween.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+DaysBetween.swift"; sourceTree = "<group>"; };
 		AAF892B8261121400019C10D /* Date+FakeCurrentDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FakeCurrentDate.swift"; sourceTree = "<group>"; };
 		AAF892BD261125A20019C10D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AE76E79EA7FC44BB67706E18 /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C78C2F4088EE9C5E7FAE745F /* Pods_Wagr_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wagr_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC8ECE39B6E71CAFFF5B0000 /* Pods-Wagr-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +162,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAF955F8D8BF36245417EC8B /* Pods_Wagr_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +169,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFCFBFA56E7EB33613CC1483 /* Pods_Wagr_AssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,23 +176,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B886BF0A8C2E17CD13BAC5E /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		201F5A209EA24D25950E5BFB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C78C2F4088EE9C5E7FAE745F /* Pods_Wagr_Assignment.framework */,
-				38926895E1A1C112CF83546D /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework */,
-				5B831BDD4BBB8BA6CD7B7696 /* Pods_Wagr_AssignmentTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		AA2CDF6E260E778F00BC8303 = {
 			isa = PBXGroup;
 			children = (
@@ -215,7 +190,6 @@
 				AA2CDF9E260E779300BC8303 /* Wagr-AssignmentUITests */,
 				AA2CDF78260E778F00BC8303 /* Products */,
 				F1EC1879EE5C1B8EBF0789CB /* Pods */,
-				201F5A209EA24D25950E5BFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -460,12 +434,6 @@
 		F1EC1879EE5C1B8EBF0789CB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EC8ECE39B6E71CAFFF5B0000 /* Pods-Wagr-Assignment.debug.xcconfig */,
-				A33CE3B9C8FC1115244A08A1 /* Pods-Wagr-Assignment.release.xcconfig */,
-				AE76E79EA7FC44BB67706E18 /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig */,
-				50F9D3761A40E4965AD7A180 /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig */,
-				A0D9CD3BF792FBCD46E70F42 /* Pods-Wagr-AssignmentTests.debug.xcconfig */,
-				8820E4D8D119085FABBA9522 /* Pods-Wagr-AssignmentTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -477,11 +445,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA2CDFA4260E779300BC8303 /* Build configuration list for PBXNativeTarget "Wagr-Assignment" */;
 			buildPhases = (
-				0F4DD07CF341F7D0E3EA490A /* [CP] Check Pods Manifest.lock */,
 				AA2CDF73260E778F00BC8303 /* Sources */,
 				AA2CDF74260E778F00BC8303 /* Frameworks */,
 				AA2CDF75260E778F00BC8303 /* Resources */,
-				3CFC972E958CC3628660C831 /* [CP] Embed Pods Frameworks */,
 				AAAB50DA2611266200AE4ED3 /* Crashlytics */,
 			);
 			buildRules = (
@@ -497,7 +463,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA2CDFA7260E779300BC8303 /* Build configuration list for PBXNativeTarget "Wagr-AssignmentTests" */;
 			buildPhases = (
-				5D8B01CE634DCA611B78A700 /* [CP] Check Pods Manifest.lock */,
 				AA2CDF8C260E779300BC8303 /* Sources */,
 				AA2CDF8D260E779300BC8303 /* Frameworks */,
 				AA2CDF8E260E779300BC8303 /* Resources */,
@@ -516,11 +481,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA2CDFAA260E779300BC8303 /* Build configuration list for PBXNativeTarget "Wagr-AssignmentUITests" */;
 			buildPhases = (
-				3566DD1992D3A7E6EF8F583E /* [CP] Check Pods Manifest.lock */,
 				AA2CDF97260E779300BC8303 /* Sources */,
 				AA2CDF98260E779300BC8303 /* Frameworks */,
 				AA2CDF99260E779300BC8303 /* Resources */,
-				6D1D9DB309E11A2024095A4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -621,106 +584,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F4DD07CF341F7D0E3EA490A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Wagr-Assignment-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3566DD1992D3A7E6EF8F583E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Wagr-Assignment-Wagr-AssignmentUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3CFC972E958CC3628660C831 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5D8B01CE634DCA611B78A700 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Wagr-AssignmentTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6D1D9DB309E11A2024095A4F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AAAB50DA2611266200AE4ED3 /* Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -977,7 +840,6 @@
 		};
 		AA2CDFA5260E779300BC8303 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC8ECE39B6E71CAFFF5B0000 /* Pods-Wagr-Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -998,7 +860,6 @@
 		};
 		AA2CDFA6260E779300BC8303 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A33CE3B9C8FC1115244A08A1 /* Pods-Wagr-Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1018,7 +879,6 @@
 		};
 		AA2CDFA8260E779300BC8303 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0D9CD3BF792FBCD46E70F42 /* Pods-Wagr-AssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1041,7 +901,6 @@
 		};
 		AA2CDFA9260E779300BC8303 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8820E4D8D119085FABBA9522 /* Pods-Wagr-AssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1064,7 +923,6 @@
 		};
 		AA2CDFAB260E779300BC8303 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE76E79EA7FC44BB67706E18 /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1085,7 +943,6 @@
 		};
 		AA2CDFAC260E779300BC8303 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50F9D3761A40E4965AD7A180 /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

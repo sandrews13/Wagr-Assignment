@@ -1,6 +1,0 @@
-framework module Pods_Wagr_Assignment {
-  umbrella header "Pods-Wagr-Assignment-umbrella.h"
-
-  export *
-  module * { export * }
-}

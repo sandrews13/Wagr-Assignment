@@ -1,0 +1,17 @@
+## XCode
+xcuserdata/
+DerivedData/
+.build/
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Cocoapods
+Pods/
+*.xcworkspace
+vendor/*
+
+## System
+.DS_Store
