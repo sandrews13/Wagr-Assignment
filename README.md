@@ -30,7 +30,7 @@ The app demonstrates two different styles of showing the bet confirmation/celebr
 Note that A/B testing would be required to fully quantify the impact of these different screens.
 
 ## Caching
-This project caches game information retrieved by the Games API to allow the user to view upcoming games with offline or with poor connectivity. An indicator in the top-right of the game list will show when the user is offline. Tap the indicator for more information.
+The app caches game information retrieved by the Games API to allow the user to view upcoming games while offline or with poor connectivity. An indicator at the top-right of the game list will show when the user is offline. Tap the indicator for more information.
 
 The network reachability manager will automatically re-sync the games list with the API when the network is restored. 
 
