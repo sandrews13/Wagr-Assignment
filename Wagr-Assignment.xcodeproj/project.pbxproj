@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E99C9B0CB9CD0337B144B0D /* Pods_Wagr_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FF42EDB7312CBF5F3C9CA4 /* Pods_Wagr_Assignment.framework */; };
 		AA2CDF7B260E778F00BC8303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF7A260E778F00BC8303 /* AppDelegate.swift */; };
 		AA2CDF7D260E778F00BC8303 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF7C260E778F00BC8303 /* SceneDelegate.swift */; };
 		AA2CDF7F260E778F00BC8303 /* BrowseGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF7E260E778F00BC8303 /* BrowseGamesViewController.swift */; };
@@ -52,6 +53,7 @@
 		AAB6D9642612797C004A9337 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6D9632612797C004A9337 /* AnalyticsManager.swift */; };
 		AAB6D96A26129524004A9337 /* FullScreenCelebrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6D96826129524004A9337 /* FullScreenCelebrationViewController.swift */; };
 		AAB6D96B26129524004A9337 /* FullScreenCelebrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAB6D96926129524004A9337 /* FullScreenCelebrationViewController.xib */; };
+		AAB7B83B261364000072181A /* ConfettiLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB7B83A261364000072181A /* ConfettiLayer.swift */; };
 		AAE2657E261261C800AFEF5F /* ModalCelebrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE2657C261261C800AFEF5F /* ModalCelebrationViewController.swift */; };
 		AAE2657F261261C800AFEF5F /* ModalCelebrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE2657D261261C800AFEF5F /* ModalCelebrationViewController.xib */; };
 		AAF8926A260FFA750019C10D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF89269260FFA750019C10D /* UIColor+Hex.swift */; };
@@ -69,6 +71,8 @@
 		AAF892B426111DF90019C10D /* Calendar+DaysBetween.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF892B326111DF90019C10D /* Calendar+DaysBetween.swift */; };
 		AAF892B9261121400019C10D /* Date+FakeCurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF892B8261121400019C10D /* Date+FakeCurrentDate.swift */; };
 		AAF892BE261125A20019C10D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAF892BD261125A20019C10D /* GoogleService-Info.plist */; };
+		D3A21C30A3ABDD419BC9C6BD /* Pods_Wagr_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E3EAFCD4760A00B13FCB8E /* Pods_Wagr_AssignmentTests.framework */; };
+		D4FCEABC7A3AB1C57C94D288 /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE84E952EC46EA91CA19375D /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2299B4779204C4161F74CFA6 /* Pods-Wagr-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		29E3EAFCD4760A00B13FCB8E /* Pods_Wagr_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wagr_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29FF42EDB7312CBF5F3C9CA4 /* Pods_Wagr_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wagr_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D6F03FD2935EB6555512866 /* Pods-Wagr-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-Assignment.release.xcconfig"; path = "Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		AA2CDF77260E778F00BC8303 /* Wagr-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wagr-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2CDF7A260E778F00BC8303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA2CDF7C260E778F00BC8303 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +146,7 @@
 		AAB6D9632612797C004A9337 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		AAB6D96826129524004A9337 /* FullScreenCelebrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCelebrationViewController.swift; sourceTree = "<group>"; };
 		AAB6D96926129524004A9337 /* FullScreenCelebrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullScreenCelebrationViewController.xib; sourceTree = "<group>"; };
+		AAB7B83A261364000072181A /* ConfettiLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiLayer.swift; sourceTree = "<group>"; };
 		AAE2657C261261C800AFEF5F /* ModalCelebrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCelebrationViewController.swift; sourceTree = "<group>"; };
 		AAE2657D261261C800AFEF5F /* ModalCelebrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalCelebrationViewController.xib; sourceTree = "<group>"; };
 		AAF89269260FFA750019C10D /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
@@ -155,6 +164,11 @@
 		AAF892B326111DF90019C10D /* Calendar+DaysBetween.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+DaysBetween.swift"; sourceTree = "<group>"; };
 		AAF892B8261121400019C10D /* Date+FakeCurrentDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FakeCurrentDate.swift"; sourceTree = "<group>"; };
 		AAF892BD261125A20019C10D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D7541A9FB6701F250BF3312D /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DE84E952EC46EA91CA19375D /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1531D49507DF411965AD39F /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4C5F3374A30AEF7283C813B /* Pods-Wagr-AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-AssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-Wagr-AssignmentTests/Pods-Wagr-AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD4B6B332F07DF596C509431 /* Pods-Wagr-AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-AssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Wagr-AssignmentTests/Pods-Wagr-AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E99C9B0CB9CD0337B144B0D /* Pods_Wagr_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3A21C30A3ABDD419BC9C6BD /* Pods_Wagr_AssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4FCEABC7A3AB1C57C94D288 /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +207,7 @@
 				AA2CDF9E260E779300BC8303 /* Wagr-AssignmentUITests */,
 				AA2CDF78260E778F00BC8303 /* Products */,
 				F1EC1879EE5C1B8EBF0789CB /* Pods */,
+				CD2B07C2DC568A5B870758F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -374,6 +392,7 @@
 				AAF892AE26111BF80019C10D /* GameSorter.swift */,
 				AAB6D95126126F7B004A9337 /* AnimatedGradientLayer.swift */,
 				AAB6D95E26127718004A9337 /* RoundImageView.swift */,
+				AAB7B83A261364000072181A /* ConfettiLayer.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -431,9 +450,25 @@
 			path = Quicksand;
 			sourceTree = "<group>";
 		};
+		CD2B07C2DC568A5B870758F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29FF42EDB7312CBF5F3C9CA4 /* Pods_Wagr_Assignment.framework */,
+				DE84E952EC46EA91CA19375D /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework */,
+				29E3EAFCD4760A00B13FCB8E /* Pods_Wagr_AssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F1EC1879EE5C1B8EBF0789CB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				2299B4779204C4161F74CFA6 /* Pods-Wagr-Assignment.debug.xcconfig */,
+				6D6F03FD2935EB6555512866 /* Pods-Wagr-Assignment.release.xcconfig */,
+				F1531D49507DF411965AD39F /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig */,
+				D7541A9FB6701F250BF3312D /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig */,
+				FD4B6B332F07DF596C509431 /* Pods-Wagr-AssignmentTests.debug.xcconfig */,
+				F4C5F3374A30AEF7283C813B /* Pods-Wagr-AssignmentTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -445,10 +480,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA2CDFA4260E779300BC8303 /* Build configuration list for PBXNativeTarget "Wagr-Assignment" */;
 			buildPhases = (
+				E4FEE4B880823E1995CF0A7A /* [CP] Check Pods Manifest.lock */,
 				AA2CDF73260E778F00BC8303 /* Sources */,
 				AA2CDF74260E778F00BC8303 /* Frameworks */,
 				AA2CDF75260E778F00BC8303 /* Resources */,
 				AAAB50DA2611266200AE4ED3 /* Crashlytics */,
+				B4ADDE68420AD664ED8A7D6F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -463,6 +500,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA2CDFA7260E779300BC8303 /* Build configuration list for PBXNativeTarget "Wagr-AssignmentTests" */;
 			buildPhases = (
+				25D0AFAE89B075E32619F33F /* [CP] Check Pods Manifest.lock */,
 				AA2CDF8C260E779300BC8303 /* Sources */,
 				AA2CDF8D260E779300BC8303 /* Frameworks */,
 				AA2CDF8E260E779300BC8303 /* Resources */,
@@ -481,9 +519,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA2CDFAA260E779300BC8303 /* Build configuration list for PBXNativeTarget "Wagr-AssignmentUITests" */;
 			buildPhases = (
+				B1C0175CB04CD5797B3E5340 /* [CP] Check Pods Manifest.lock */,
 				AA2CDF97260E779300BC8303 /* Sources */,
 				AA2CDF98260E779300BC8303 /* Frameworks */,
 				AA2CDF99260E779300BC8303 /* Resources */,
+				EAD648401DC3FD90CB65875D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -584,6 +624,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		25D0AFAE89B075E32619F33F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wagr-AssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AAAB50DA2611266200AE4ED3 /* Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -603,6 +665,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		B1C0175CB04CD5797B3E5340 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wagr-Assignment-Wagr-AssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4ADDE68420AD664ED8A7D6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4FEE4B880823E1995CF0A7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wagr-Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAD648401DC3FD90CB65875D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -634,6 +774,7 @@
 				AAA005D626112E5D00D97648 /* UIFont+Wagr.swift in Sources */,
 				AAF892B9261121400019C10D /* Date+FakeCurrentDate.swift in Sources */,
 				AAF8926A260FFA750019C10D /* UIColor+Hex.swift in Sources */,
+				AAB7B83B261364000072181A /* ConfettiLayer.swift in Sources */,
 				AA703E89260E96EF0037519B /* Game+CoreDataProperties.swift in Sources */,
 				AA2CDFC0260E8DAF00BC8303 /* NetworkManager.swift in Sources */,
 				AA2CDF7B260E778F00BC8303 /* AppDelegate.swift in Sources */,
@@ -840,6 +981,7 @@
 		};
 		AA2CDFA5260E779300BC8303 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2299B4779204C4161F74CFA6 /* Pods-Wagr-Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -860,6 +1002,7 @@
 		};
 		AA2CDFA6260E779300BC8303 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6F03FD2935EB6555512866 /* Pods-Wagr-Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -879,6 +1022,7 @@
 		};
 		AA2CDFA8260E779300BC8303 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD4B6B332F07DF596C509431 /* Pods-Wagr-AssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -901,6 +1045,7 @@
 		};
 		AA2CDFA9260E779300BC8303 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4C5F3374A30AEF7283C813B /* Pods-Wagr-AssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -923,6 +1068,7 @@
 		};
 		AA2CDFAB260E779300BC8303 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1531D49507DF411965AD39F /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -943,6 +1089,7 @@
 		};
 		AA2CDFAC260E779300BC8303 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7541A9FB6701F250BF3312D /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

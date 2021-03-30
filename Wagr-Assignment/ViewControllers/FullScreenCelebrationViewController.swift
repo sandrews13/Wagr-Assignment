@@ -40,6 +40,11 @@ class FullScreenCelebrationViewController: UIViewController {
         
         return layer
     }()
+    private lazy var confettiLayer: ConfettiLayer = {
+        let layer = ConfettiLayer(host: self.backgroundView)
+        
+        return layer
+    }()
     
     // MARK: - Initializers
     
@@ -81,6 +86,7 @@ class FullScreenCelebrationViewController: UIViewController {
         okButton.layer.cornerRadius = Constants.cornerRadius
         gradientLayer.animationDelegate = self
         gradientLayer.apply()
+        confettiLayer.apply()
         configureGameCell()
         applyLocalization()
         applyFonts()

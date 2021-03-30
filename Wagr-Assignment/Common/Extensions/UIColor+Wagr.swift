@@ -22,4 +22,8 @@ extension UIColor {
     static let gradient1 = UIColor(named: "gradient1")!
     static let gradient2 = UIColor(named: "gradient2")!
     
+    static let darkBrandParticle = UIColor(named: "darkBrandParticle")!
+    static let blueParticle = UIColor(named: "blueParticle")!
+    static let redParticle = UIColor(named: "redParticle")!
+    
 }

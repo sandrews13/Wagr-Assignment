@@ -11,5 +11,6 @@ import UIKit
 extension UIImage {
     
     static let offline = UIImage(named: "no-wifi")
+    static let finger = UIImage(named: "finger")
     
 }

@@ -56,6 +56,11 @@ class BrowseGamesViewController: UIViewController {
     
     // MARK: - Lifecycle Functions
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
