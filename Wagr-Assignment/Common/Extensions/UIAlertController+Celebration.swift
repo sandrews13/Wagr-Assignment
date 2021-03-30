@@ -9,7 +9,7 @@ import UIKit
 
 extension UIAlertController {
     
-    static func celebrationActionSheet(host: UIViewController) -> UIAlertController {
+    static func celebrationActionSheet(host: UIViewController, game: Game) -> UIAlertController {
         let controller = UIAlertController(title: "Select your celebration type", message: "", preferredStyle: .actionSheet)
         controller.addAction(UIAlertAction(title: "Modal", style: .default, handler: { (action) in
             let modalCelebration = ModalCelebrationViewController()
@@ -18,7 +18,10 @@ extension UIAlertController {
             
             host.present(modalCelebration, animated: true)
         }))
-        controller.addAction(UIAlertAction(title: "Fullscreen", style: .default))
+        controller.addAction(UIAlertAction(title: "Fullscreen", style: .default, handler: { (action) in
+            let fullScreenCelebration = FullScreenCelebrationViewController(game: game)
+            host.navigationController?.pushViewController(fullScreenCelebration, animated: true)
+        }))
         controller.addAction(UIAlertAction(title: "Cancel", style: .destructive))
         
         return controller

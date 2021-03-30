@@ -11,5 +11,8 @@
 "ok" = "OK";
 "today" = "Today";
 "tomorrow" = "Tomorrow";
-"confirmation-modal-title" = "Bet Confirmed";
-"confirmation-modal-message" = "Congrats on being one step closer to bragging rights";
+"confirmation-title" = "Bet Confirmed";
+"confirmation-message" = "Congrats on being one step closer to bragging rights";
+"confirmation-bet" = "Your Bet";
+"confirmation-bet-text" = "%@ to win";
+"confirmation-home-team" = "Home Team";

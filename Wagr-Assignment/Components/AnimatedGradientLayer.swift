@@ -14,9 +14,9 @@ class AnimatedGradientLayer: CAGradientLayer {
     private let host: UIView
     private var currentGradient: Int = 0
     
-    private static let gradientColours = [
-        [UIColor.brandBackground.cgColor, UIColor.brandForeground.cgColor],
-        [UIColor.brandForeground.cgColor, UIColor.brandBackground.cgColor]
+    private let gradientColours = [
+        [UIColor.gradient1.cgColor, UIColor.gradient2.cgColor],
+        [UIColor.gradient2.cgColor, UIColor.gradient1.cgColor]
     ]
     
     init(host view: UIView) {
@@ -42,7 +42,7 @@ class AnimatedGradientLayer: CAGradientLayer {
     private func configureGradient() {
         
         frame = host.bounds
-        colors = AnimatedGradientLayer.gradientColours[0]
+        colors = gradientColours[0]
         startPoint = CGPoint(x: 0, y: 0)
         endPoint = CGPoint(x: 1, y: 1)
         drawsAsynchronously = false
@@ -50,8 +50,8 @@ class AnimatedGradientLayer: CAGradientLayer {
     }
     
     func startAnimation() {
-        colors = AnimatedGradientLayer.gradientColours[currentGradient]
-        if currentGradient < AnimatedGradientLayer.gradientColours.count - 1 {
+        colors = gradientColours[currentGradient]
+        if currentGradient < gradientColours.count - 1 {
             currentGradient += 1
         } else {
             currentGradient = 0
@@ -59,7 +59,7 @@ class AnimatedGradientLayer: CAGradientLayer {
         
         let gradientChangeAnimation = CABasicAnimation(keyPath: "colors")
         gradientChangeAnimation.duration = 5.0
-        gradientChangeAnimation.toValue = AnimatedGradientLayer.gradientColours[currentGradient]
+        gradientChangeAnimation.toValue = gradientColours[currentGradient]
         gradientChangeAnimation.fillMode = CAMediaTimingFillMode.forwards
         gradientChangeAnimation.isRemovedOnCompletion = false
         gradientChangeAnimation.delegate = animationDelegate

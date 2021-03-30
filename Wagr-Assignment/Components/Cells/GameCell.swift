@@ -100,7 +100,7 @@ extension GameCell {
     
     // MARK: - Internal Methods
     
-    func update(with game: Game) {
+    func update(with game: Game, asView: Bool = false) {
         
         guard let homeTeam = game.homeTeam, let awayTeam = game.awayTeam else {
             fatalError("Data is corrupted, game doesn't have 2 teams")
@@ -112,7 +112,16 @@ extension GameCell {
         
         leagueIcon.image = UIImage(named: game.league)!
         leagueNameLabel.text = gameViewModel.league
-        timeLabel.text = game.date.stringWithTimezone()
+        timeLabel.text = gameViewModel.date(withMonth: asView)
+        
+        if asView {
+            contentView.backgroundColor = .clear
+            timeLabel.textColor = .brandedText
+            timeIcon.tintColor = .brandedText
+            leagueNameLabel.textColor = .brandedText
+            leagueIcon.tintColor = .brandedText
+            
+        }
     }
     
     // MARK: - Private Functions

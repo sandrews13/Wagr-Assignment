@@ -51,6 +51,8 @@
 		AAB6D957261274BB004A9337 /* UIAlertController+Celebration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6D956261274BB004A9337 /* UIAlertController+Celebration.swift */; };
 		AAB6D95F26127718004A9337 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6D95E26127718004A9337 /* RoundImageView.swift */; };
 		AAB6D9642612797C004A9337 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6D9632612797C004A9337 /* AnalyticsManager.swift */; };
+		AAB6D96A26129524004A9337 /* FullScreenCelebrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6D96826129524004A9337 /* FullScreenCelebrationViewController.swift */; };
+		AAB6D96B26129524004A9337 /* FullScreenCelebrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAB6D96926129524004A9337 /* FullScreenCelebrationViewController.xib */; };
 		AAE2657E261261C800AFEF5F /* ModalCelebrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE2657C261261C800AFEF5F /* ModalCelebrationViewController.swift */; };
 		AAE2657F261261C800AFEF5F /* ModalCelebrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE2657D261261C800AFEF5F /* ModalCelebrationViewController.xib */; };
 		AAF8926A260FFA750019C10D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF89269260FFA750019C10D /* UIColor+Hex.swift */; };
@@ -143,6 +145,8 @@
 		AAB6D956261274BB004A9337 /* UIAlertController+Celebration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Celebration.swift"; sourceTree = "<group>"; };
 		AAB6D95E26127718004A9337 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		AAB6D9632612797C004A9337 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		AAB6D96826129524004A9337 /* FullScreenCelebrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCelebrationViewController.swift; sourceTree = "<group>"; };
+		AAB6D96926129524004A9337 /* FullScreenCelebrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullScreenCelebrationViewController.xib; sourceTree = "<group>"; };
 		AAE2657C261261C800AFEF5F /* ModalCelebrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCelebrationViewController.swift; sourceTree = "<group>"; };
 		AAE2657D261261C800AFEF5F /* ModalCelebrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalCelebrationViewController.xib; sourceTree = "<group>"; };
 		AAF89269260FFA750019C10D /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
@@ -297,6 +301,8 @@
 				AA2CDF7E260E778F00BC8303 /* BrowseGamesViewController.swift */,
 				AAE2657C261261C800AFEF5F /* ModalCelebrationViewController.swift */,
 				AAE2657D261261C800AFEF5F /* ModalCelebrationViewController.xib */,
+				AAB6D96826129524004A9337 /* FullScreenCelebrationViewController.swift */,
+				AAB6D96926129524004A9337 /* FullScreenCelebrationViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -589,6 +595,7 @@
 				AA2CDF82260E778F00BC8303 /* Main.storyboard in Resources */,
 				AAA005F82612416A00D97648 /* Roboto-Black.ttf in Resources */,
 				AAA005DD261137FE00D97648 /* DateCollectionViewCell.xib in Resources */,
+				AAB6D96B26129524004A9337 /* FullScreenCelebrationViewController.xib in Resources */,
 				AAE2657F261261C800AFEF5F /* ModalCelebrationViewController.xib in Resources */,
 				AAA005FB2612416A00D97648 /* Roboto-Regular.ttf in Resources */,
 				AA703EBD260EC8170037519B /* GameCell.xib in Resources */,
@@ -745,6 +752,7 @@
 				AA2CDFCC260E8E1A00BC8303 /* Team+CoreDataClass.swift in Sources */,
 				AAF892B426111DF90019C10D /* Calendar+DaysBetween.swift in Sources */,
 				AA2CDFCE260E8E1A00BC8303 /* Game+CoreDataClass.swift in Sources */,
+				AAB6D96A26129524004A9337 /* FullScreenCelebrationViewController.swift in Sources */,
 				AAE2657E261261C800AFEF5F /* ModalCelebrationViewController.swift in Sources */,
 				AAA005D126112D2D00D97648 /* DateHeader.swift in Sources */,
 				AA703EBC260EC8170037519B /* GameCell.swift in Sources */,

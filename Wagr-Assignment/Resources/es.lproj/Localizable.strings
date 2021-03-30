@@ -11,5 +11,8 @@
 "ok" = "OK";
 "today" = "Hoy Dia";
 "tomorrow" = "Mañana";
-"confirmation-modal-title" = "Apuesta Confirmada";
-"confirmation-modal-message" = "Felicidades por estar un paso más cerca de los derechos de fanfarronear";
+"confirmation-title" = "Apuesta Confirmada";
+"confirmation-message" = "Felicidades por estar un paso más cerca de los derechos de fanfarronear";
+"confirmation-bet" = "Tu Apuesta";
+"confirmation-bet-text" = "%@ va a ganar";
+"confirmation-home-team" = "Equipo Local";

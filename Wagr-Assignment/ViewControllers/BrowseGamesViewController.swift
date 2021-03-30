@@ -199,7 +199,11 @@ extension BrowseGamesViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let celebrationActionSheet = UIAlertController.celebrationActionSheet(host: self)
+        guard let game = gameSorter.sortedGames[indexPath.section]?[indexPath.row] else {
+            os_log(.error, "Error: Selected game returned nil")
+            return
+        }
+        let celebrationActionSheet = UIAlertController.celebrationActionSheet(host: self, game: game)
         present(celebrationActionSheet, animated: true)
     }
     

@@ -34,6 +34,11 @@ extension Date {
         return dateString
     }
     
+    func stringWithMonth(daysUntilGame: Int) -> String {
+        let dateString = Date.stringforDaysInFuture(daysUntilGame) + ", " + Date.timeDateFormatter.string(from: self).replacingOccurrences(of: ":00", with: "")
+        return dateString
+    }
+    
     static func stringforDaysInFuture(_ days: Int) -> String {
         
         switch days {

@@ -17,4 +17,9 @@ extension UIColor {
     static let brandForeground = UIColor(named: "brandForeground")!
     static let brandBackground = UIColor(named: "brandBackground")!
     
+    static let brandedText = UIColor(named: "brandedTextColour")!
+    
+    static let gradient1 = UIColor(named: "gradient1")!
+    static let gradient2 = UIColor(named: "gradient2")!
+    
 }

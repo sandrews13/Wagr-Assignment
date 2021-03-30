@@ -74,4 +74,11 @@ class GameViewModel {
         }
     }()
     
+    func date(withMonth: Bool = false) -> String {
+        guard withMonth, let daysUntilGame = Calendar.current.numberOfDaysBetween(Date.rightNow, and: game.date) else {
+            return game.date.stringWithTimezone()
+        }
+        return game.date.stringWithMonth(daysUntilGame: daysUntilGame)
+    }
+    
 }
