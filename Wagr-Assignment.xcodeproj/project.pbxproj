@@ -9,14 +9,12 @@
 /* Begin PBXBuildFile section */
 		1E99C9B0CB9CD0337B144B0D /* Pods_Wagr_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FF42EDB7312CBF5F3C9CA4 /* Pods_Wagr_Assignment.framework */; };
 		AA2CDF7B260E778F00BC8303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF7A260E778F00BC8303 /* AppDelegate.swift */; };
-		AA2CDF7D260E778F00BC8303 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF7C260E778F00BC8303 /* SceneDelegate.swift */; };
 		AA2CDF7F260E778F00BC8303 /* BrowseGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF7E260E778F00BC8303 /* BrowseGamesViewController.swift */; };
 		AA2CDF82260E778F00BC8303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2CDF80260E778F00BC8303 /* Main.storyboard */; };
 		AA2CDF85260E778F00BC8303 /* Wagr_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF83260E778F00BC8303 /* Wagr_Assignment.xcdatamodeld */; };
 		AA2CDF87260E779300BC8303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2CDF86260E779300BC8303 /* Assets.xcassets */; };
 		AA2CDF8A260E779300BC8303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2CDF88260E779300BC8303 /* LaunchScreen.storyboard */; };
 		AA2CDF95260E779300BC8303 /* Wagr_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF94260E779300BC8303 /* Wagr_AssignmentTests.swift */; };
-		AA2CDFA0260E779300BC8303 /* Wagr_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF9F260E779300BC8303 /* Wagr_AssignmentUITests.swift */; };
 		AA2CDFC0260E8DAF00BC8303 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFBF260E8DAF00BC8303 /* NetworkManager.swift */; };
 		AA2CDFC1260E8DAF00BC8303 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFBF260E8DAF00BC8303 /* NetworkManager.swift */; };
 		AA2CDFCC260E8E1A00BC8303 /* Team+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFC8260E8E1A00BC8303 /* Team+CoreDataClass.swift */; };
@@ -75,18 +73,10 @@
 		AAF892B9261121400019C10D /* Date+FakeCurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF892B8261121400019C10D /* Date+FakeCurrentDate.swift */; };
 		AAF892BE261125A20019C10D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAF892BD261125A20019C10D /* GoogleService-Info.plist */; };
 		D3A21C30A3ABDD419BC9C6BD /* Pods_Wagr_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E3EAFCD4760A00B13FCB8E /* Pods_Wagr_AssignmentTests.framework */; };
-		D4FCEABC7A3AB1C57C94D288 /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE84E952EC46EA91CA19375D /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		AA2CDF91260E779300BC8303 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AA2CDF6F260E778F00BC8303 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AA2CDF76260E778F00BC8303;
-			remoteInfo = "Wagr-Assignment";
-		};
-		AA2CDF9C260E779300BC8303 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA2CDF6F260E778F00BC8303 /* Project object */;
 			proxyType = 1;
@@ -102,7 +92,6 @@
 		6D6F03FD2935EB6555512866 /* Pods-Wagr-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wagr-Assignment.release.xcconfig"; path = "Target Support Files/Pods-Wagr-Assignment/Pods-Wagr-Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		AA2CDF77260E778F00BC8303 /* Wagr-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wagr-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2CDF7A260E778F00BC8303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA2CDF7C260E778F00BC8303 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AA2CDF7E260E778F00BC8303 /* BrowseGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseGamesViewController.swift; sourceTree = "<group>"; };
 		AA2CDF84260E778F00BC8303 /* Wagr_Assignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wagr_Assignment.xcdatamodel; sourceTree = "<group>"; };
 		AA2CDF86260E779300BC8303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,9 +99,6 @@
 		AA2CDF90260E779300BC8303 /* Wagr-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wagr-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2CDF94260E779300BC8303 /* Wagr_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wagr_AssignmentTests.swift; sourceTree = "<group>"; };
 		AA2CDF96260E779300BC8303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA2CDF9B260E779300BC8303 /* Wagr-AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wagr-AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA2CDF9F260E779300BC8303 /* Wagr_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wagr_AssignmentUITests.swift; sourceTree = "<group>"; };
-		AA2CDFA1260E779300BC8303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA2CDFBF260E8DAF00BC8303 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AA2CDFC8260E8E1A00BC8303 /* Team+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Team+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AA2CDFCA260E8E1A00BC8303 /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -194,14 +180,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA2CDF98260E779300BC8303 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D4FCEABC7A3AB1C57C94D288 /* Pods_Wagr_Assignment_Wagr_AssignmentUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -210,7 +188,6 @@
 			children = (
 				AA2CDF79260E778F00BC8303 /* Wagr-Assignment */,
 				AA2CDF93260E779300BC8303 /* Wagr-AssignmentTests */,
-				AA2CDF9E260E779300BC8303 /* Wagr-AssignmentUITests */,
 				AA2CDF78260E778F00BC8303 /* Products */,
 				F1EC1879EE5C1B8EBF0789CB /* Pods */,
 				CD2B07C2DC568A5B870758F0 /* Frameworks */,
@@ -222,7 +199,6 @@
 			children = (
 				AA2CDF77260E778F00BC8303 /* Wagr-Assignment.app */,
 				AA2CDF90260E779300BC8303 /* Wagr-AssignmentTests.xctest */,
-				AA2CDF9B260E779300BC8303 /* Wagr-AssignmentUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,17 +206,13 @@
 		AA2CDF79260E778F00BC8303 /* Wagr-Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				AA86DE08261407B700429455 /* Views */,
-				AAA005C326112C6D00D97648 /* Common */,
-				AA703F10260FCE920037519B /* Components */,
-				AA703ED5260FA94B0037519B /* Models */,
-				AA2CDFB6260E8B6300BC8303 /* ViewControllers */,
-				AA2CDFBE260E8D8900BC8303 /* Networking */,
-				AAF8926E260FFCC20019C10D /* ViewModels */,
-				AA2CDFB7260E8B7500BC8303 /* CoreData */,
-				AA2CDFB5260E8B4700BC8303 /* UI */,
-				AA2CDFB4260E8B3A00BC8303 /* Resources */,
 				AA2CDFB3260E8B3400BC8303 /* App */,
+				AAA005C326112C6D00D97648 /* Common */,
+				AA2CDFB7260E8B7500BC8303 /* CoreData */,
+				AA2CDFBE260E8D8900BC8303 /* Networking */,
+				AA2CDFB4260E8B3A00BC8303 /* Resources */,
+				AA86DE352614E9A000429455 /* Screens */,
+				AA2CDFB5260E8B4700BC8303 /* UI */,
 			);
 			path = "Wagr-Assignment";
 			sourceTree = "<group>";
@@ -254,19 +226,9 @@
 			path = "Wagr-AssignmentTests";
 			sourceTree = "<group>";
 		};
-		AA2CDF9E260E779300BC8303 /* Wagr-AssignmentUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AA2CDF9F260E779300BC8303 /* Wagr_AssignmentUITests.swift */,
-				AA2CDFA1260E779300BC8303 /* Info.plist */,
-			);
-			path = "Wagr-AssignmentUITests";
-			sourceTree = "<group>";
-		};
 		AA2CDFB3260E8B3400BC8303 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				AA2CDF7C260E778F00BC8303 /* SceneDelegate.swift */,
 				AA2CDF7A260E778F00BC8303 /* AppDelegate.swift */,
 				AA2CDF8B260E779300BC8303 /* Info.plist */,
 			);
@@ -276,11 +238,11 @@
 		AA2CDFB4260E8B3A00BC8303 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AAF892BD261125A20019C10D /* GoogleService-Info.plist */,
-				AAF89291261109C50019C10D /* Fonts */,
+				AA2CDF86260E779300BC8303 /* Assets.xcassets */,
 				AA703F08260FCE4E0037519B /* en.lproj */,
 				AA703F05260FCE4E0037519B /* es.lproj */,
-				AA2CDF86260E779300BC8303 /* Assets.xcassets */,
+				AAF89291261109C50019C10D /* Fonts */,
+				AAF892BD261125A20019C10D /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -297,9 +259,6 @@
 		AA2CDFB6260E8B6300BC8303 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AA86DE242614126200429455 /* BrowseGamesViewController */,
-				AAE2657C261261C800AFEF5F /* ModalCelebrationViewController.swift */,
-				AAE2657D261261C800AFEF5F /* ModalCelebrationViewController.xib */,
 				AAB6D96826129524004A9337 /* FullScreenCelebrationViewController.swift */,
 				AAB6D96926129524004A9337 /* FullScreenCelebrationViewController.xib */,
 			);
@@ -309,13 +268,10 @@
 		AA2CDFB7260E8B7500BC8303 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				AA703E86260E96EF0037519B /* Team+CoreDataProperties.swift */,
-				AA703E87260E96EF0037519B /* Game+CoreDataProperties.swift */,
-				AA2CDFC8260E8E1A00BC8303 /* Team+CoreDataClass.swift */,
-				AA2CDFCA260E8E1A00BC8303 /* Game+CoreDataClass.swift */,
-				AA2CDF83260E778F00BC8303 /* Wagr_Assignment.xcdatamodeld */,
 				AA703ECD260F979E0037519B /* CoreDataManager.swift */,
-				AA703EE6260FC7FE0037519B /* Game+Cacheable.swift */,
+				AA86DE2C2614E8D400429455 /* Game */,
+				AA86DE2B2614E8BA00429455 /* Team */,
+				AA2CDF83260E778F00BC8303 /* Wagr_Assignment.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -394,7 +350,6 @@
 		AA703F10260FCE920037519B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				AA703EAE260EC7EB0037519B /* Cells */,
 				AA703F11260FCEFA0037519B /* NetworkReachabilityService.swift */,
 				AAF892AE26111BF80019C10D /* GameSorter.swift */,
 				AAB6D95126126F7B004A9337 /* AnimatedGradientLayer.swift */,
@@ -412,22 +367,105 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		AA86DE242614126200429455 /* BrowseGamesViewController */ = {
+		AA86DE282614E83100429455 /* BrowseGamesList */ = {
+			isa = PBXGroup;
+			children = (
+				AA703EAE260EC7EB0037519B /* Cells */,
+				AA86DE2A2614E88800429455 /* Extensions */,
+				AA86DE292614E87F00429455 /* ViewControllers */,
+				AA86DE08261407B700429455 /* Views */,
+			);
+			path = BrowseGamesList;
+			sourceTree = "<group>";
+		};
+		AA86DE292614E87F00429455 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				AA2CDF7E260E778F00BC8303 /* BrowseGamesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AA86DE2A2614E88800429455 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
 				AA86DE1A26140BFB00429455 /* BrowseGamesViewController+CollectionView.swift */,
 				AA86DE1F26140D9000429455 /* BrowseGamesViewController+TableView.swift */,
 			);
-			path = BrowseGamesViewController;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AA86DE2B2614E8BA00429455 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				AA703E86260E96EF0037519B /* Team+CoreDataProperties.swift */,
+				AA2CDFC8260E8E1A00BC8303 /* Team+CoreDataClass.swift */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		AA86DE2C2614E8D400429455 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				AA703E87260E96EF0037519B /* Game+CoreDataProperties.swift */,
+				AA2CDFCA260E8E1A00BC8303 /* Game+CoreDataClass.swift */,
+				AA703EE6260FC7FE0037519B /* Game+Cacheable.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		AA86DE322614E91D00429455 /* ModalCelebration */ = {
+			isa = PBXGroup;
+			children = (
+				AA86DE332614E92C00429455 /* ViewControllers */,
+			);
+			path = ModalCelebration;
+			sourceTree = "<group>";
+		};
+		AA86DE332614E92C00429455 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAE2657C261261C800AFEF5F /* ModalCelebrationViewController.swift */,
+				AAE2657D261261C800AFEF5F /* ModalCelebrationViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AA86DE342614E93700429455 /* FullScreenCelebration */ = {
+			isa = PBXGroup;
+			children = (
+				AA2CDFB6260E8B6300BC8303 /* ViewControllers */,
+			);
+			path = FullScreenCelebration;
+			sourceTree = "<group>";
+		};
+		AA86DE352614E9A000429455 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AA86DE282614E83100429455 /* BrowseGamesList */,
+				AA86DE342614E93700429455 /* FullScreenCelebration */,
+				AA86DE322614E91D00429455 /* ModalCelebration */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AA86DE362614E9F700429455 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				AAB6D9632612797C004A9337 /* AnalyticsManager.swift */,
+			);
+			path = Analytics;
 			sourceTree = "<group>";
 		};
 		AAA005C326112C6D00D97648 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				AA703EC4260ECBC60037519B /* Protocols */,
+				AA86DE362614E9F700429455 /* Analytics */,
+				AA703F10260FCE920037519B /* Components */,
 				AA703E55260E911B0037519B /* Extensions */,
-				AAB6D9632612797C004A9337 /* AnalyticsManager.swift */,
+				AA703ED5260FA94B0037519B /* Models */,
+				AA703EC4260ECBC60037519B /* Protocols */,
+				AAF8926E260FFCC20019C10D /* ViewModels */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -540,26 +578,6 @@
 			productReference = AA2CDF90260E779300BC8303 /* Wagr-AssignmentTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AA2CDF9A260E779300BC8303 /* Wagr-AssignmentUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AA2CDFAA260E779300BC8303 /* Build configuration list for PBXNativeTarget "Wagr-AssignmentUITests" */;
-			buildPhases = (
-				B1C0175CB04CD5797B3E5340 /* [CP] Check Pods Manifest.lock */,
-				AA2CDF97260E779300BC8303 /* Sources */,
-				AA2CDF98260E779300BC8303 /* Frameworks */,
-				AA2CDF99260E779300BC8303 /* Resources */,
-				EAD648401DC3FD90CB65875D /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AA2CDF9D260E779300BC8303 /* PBXTargetDependency */,
-			);
-			name = "Wagr-AssignmentUITests";
-			productName = "Wagr-AssignmentUITests";
-			productReference = AA2CDF9B260E779300BC8303 /* Wagr-AssignmentUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -573,10 +591,6 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					AA2CDF8F260E779300BC8303 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = AA2CDF76260E778F00BC8303;
-					};
-					AA2CDF9A260E779300BC8303 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = AA2CDF76260E778F00BC8303;
 					};
@@ -598,7 +612,6 @@
 			targets = (
 				AA2CDF76260E778F00BC8303 /* Wagr-Assignment */,
 				AA2CDF8F260E779300BC8303 /* Wagr-AssignmentTests */,
-				AA2CDF9A260E779300BC8303 /* Wagr-AssignmentUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -633,13 +646,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AA2CDF8E260E779300BC8303 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA2CDF99260E779300BC8303 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -691,28 +697,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
-		B1C0175CB04CD5797B3E5340 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Wagr-Assignment-Wagr-AssignmentUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B4ADDE68420AD664ED8A7D6F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -752,23 +736,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EAD648401DC3FD90CB65875D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wagr-Assignment-Wagr-AssignmentUITests/Pods-Wagr-Assignment-Wagr-AssignmentUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -804,7 +771,6 @@
 				AA703E89260E96EF0037519B /* Game+CoreDataProperties.swift in Sources */,
 				AA2CDFC0260E8DAF00BC8303 /* NetworkManager.swift in Sources */,
 				AA2CDF7B260E778F00BC8303 /* AppDelegate.swift in Sources */,
-				AA2CDF7D260E778F00BC8303 /* SceneDelegate.swift in Sources */,
 				AAB6D95F26127718004A9337 /* RoundImageView.swift in Sources */,
 				AA703ED7260FA9520037519B /* TeamId.swift in Sources */,
 				AAA005DC261137FE00D97648 /* DateCollectionViewCell.swift in Sources */,
@@ -830,14 +796,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA2CDF97260E779300BC8303 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA2CDFA0260E779300BC8303 /* Wagr_AssignmentUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -845,11 +803,6 @@
 			isa = PBXTargetDependency;
 			target = AA2CDF76260E778F00BC8303 /* Wagr-Assignment */;
 			targetProxy = AA2CDF91260E779300BC8303 /* PBXContainerItemProxy */;
-		};
-		AA2CDF9D260E779300BC8303 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AA2CDF76260E778F00BC8303 /* Wagr-Assignment */;
-			targetProxy = AA2CDF9C260E779300BC8303 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1094,48 +1047,6 @@
 			};
 			name = Release;
 		};
-		AA2CDFAB260E779300BC8303 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1531D49507DF411965AD39F /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MAW8P85Q68;
-				INFOPLIST_FILE = "Wagr-AssignmentUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.stevenandrews.Wagr-AssignmentUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Wagr-Assignment";
-			};
-			name = Debug;
-		};
-		AA2CDFAC260E779300BC8303 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7541A9FB6701F250BF3312D /* Pods-Wagr-Assignment-Wagr-AssignmentUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MAW8P85Q68;
-				INFOPLIST_FILE = "Wagr-AssignmentUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.stevenandrews.Wagr-AssignmentUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Wagr-Assignment";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1162,15 +1073,6 @@
 			buildConfigurations = (
 				AA2CDFA8260E779300BC8303 /* Debug */,
 				AA2CDFA9260E779300BC8303 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AA2CDFAA260E779300BC8303 /* Build configuration list for PBXNativeTarget "Wagr-AssignmentUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AA2CDFAB260E779300BC8303 /* Debug */,
-				AA2CDFAC260E779300BC8303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

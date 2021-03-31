@@ -7,8 +7,8 @@
 
 import FirebaseAnalytics
 
-// Analytics class to simplify types of analytic events
-// Can turn into a protocol to make it platform agnostic, i.e. if you want to switch from Firebase
+// Analytics class to simplify firing analytic events
+// Could turn into a protocol to make it platform agnostic, i.e. if you want to switch from Firebase
 class AnalyticsManager {
     
     static func logScreenView(screenName: String) {
