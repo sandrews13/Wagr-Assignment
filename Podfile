@@ -15,8 +15,4 @@ target 'Wagr-Assignment' do
     # Pods for testing
   end
 
-  target 'Wagr-AssignmentUITests' do
-    # Pods for testing
-  end
-
 end
