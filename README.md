@@ -83,3 +83,6 @@ Usually an app will respond to the device's dynamic text size settings. In this 
 
 ### Unit/UI Tests
 I originally planned to take a TDD approach, and to ensure that each component area had clearly defined boundaries with abstract dependies that could be injected for unit test ease. However I discovered that time is a finite thing, and made the decision to forgo tests in favour of features, since the problem decision states this is meant to be a PoC. 
+
+### CI/CD
+In an ideal world a project would include unit tests that are executed by some CI/CD system on every PR/push. This CI/CD would provide push/nightly/weekly builds, emailing stakeholders the `.ipa` for manual testing purposes. This felt beyond the scope of this assignment.
