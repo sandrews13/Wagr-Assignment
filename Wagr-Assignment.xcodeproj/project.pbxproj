@@ -16,7 +16,6 @@
 		AA2CDF8A260E779300BC8303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2CDF88260E779300BC8303 /* LaunchScreen.storyboard */; };
 		AA2CDF95260E779300BC8303 /* Wagr_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDF94260E779300BC8303 /* Wagr_AssignmentTests.swift */; };
 		AA2CDFC0260E8DAF00BC8303 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFBF260E8DAF00BC8303 /* NetworkManager.swift */; };
-		AA2CDFC1260E8DAF00BC8303 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFBF260E8DAF00BC8303 /* NetworkManager.swift */; };
 		AA2CDFCC260E8E1A00BC8303 /* Team+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFC8260E8E1A00BC8303 /* Team+CoreDataClass.swift */; };
 		AA2CDFCE260E8E1A00BC8303 /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2CDFCA260E8E1A00BC8303 /* Game+CoreDataClass.swift */; };
 		AA703E57260E91320037519B /* CodingUserInfoKey+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703E56260E91320037519B /* CodingUserInfoKey+Context.swift */; };
@@ -791,7 +790,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA703E9F260EC55D0037519B /* NetworkError.swift in Sources */,
-				AA2CDFC1260E8DAF00BC8303 /* NetworkManager.swift in Sources */,
 				AA2CDF95260E779300BC8303 /* Wagr_AssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
