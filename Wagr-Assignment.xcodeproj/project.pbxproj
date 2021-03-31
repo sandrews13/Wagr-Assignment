@@ -297,13 +297,11 @@
 		AA2CDFB6260E8B6300BC8303 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AA2CDF7E260E778F00BC8303 /* BrowseGamesViewController.swift */,
+				AA86DE242614126200429455 /* BrowseGamesViewController */,
 				AAE2657C261261C800AFEF5F /* ModalCelebrationViewController.swift */,
 				AAE2657D261261C800AFEF5F /* ModalCelebrationViewController.xib */,
 				AAB6D96826129524004A9337 /* FullScreenCelebrationViewController.swift */,
 				AAB6D96926129524004A9337 /* FullScreenCelebrationViewController.xib */,
-				AA86DE1A26140BFB00429455 /* BrowseGamesViewController+CollectionView.swift */,
-				AA86DE1F26140D9000429455 /* BrowseGamesViewController+TableView.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -412,6 +410,16 @@
 				AA86DE0F261407D200429455 /* BrowseGamesView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AA86DE242614126200429455 /* BrowseGamesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA2CDF7E260E778F00BC8303 /* BrowseGamesViewController.swift */,
+				AA86DE1A26140BFB00429455 /* BrowseGamesViewController+CollectionView.swift */,
+				AA86DE1F26140D9000429455 /* BrowseGamesViewController+TableView.swift */,
+			);
+			path = BrowseGamesViewController;
 			sourceTree = "<group>";
 		};
 		AAA005C326112C6D00D97648 /* Common */ = {
