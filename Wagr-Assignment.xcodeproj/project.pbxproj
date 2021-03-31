@@ -37,6 +37,9 @@
 		AA703F0B260FCE4E0037519B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA703F06260FCE4E0037519B /* Localizable.strings */; };
 		AA703F0C260FCE4E0037519B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA703F09260FCE4E0037519B /* Localizable.strings */; };
 		AA703F12260FCEFA0037519B /* NetworkReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA703F11260FCEFA0037519B /* NetworkReachabilityService.swift */; };
+		AA86DE10261407D200429455 /* BrowseGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86DE0F261407D200429455 /* BrowseGamesView.swift */; };
+		AA86DE1B26140BFB00429455 /* BrowseGamesViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86DE1A26140BFB00429455 /* BrowseGamesViewController+CollectionView.swift */; };
+		AA86DE2026140D9000429455 /* BrowseGamesViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86DE1F26140D9000429455 /* BrowseGamesViewController+TableView.swift */; };
 		AAA005D126112D2D00D97648 /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA005D026112D2D00D97648 /* DateHeader.swift */; };
 		AAA005D626112E5D00D97648 /* UIFont+Wagr.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA005D526112E5D00D97648 /* UIFont+Wagr.swift */; };
 		AAA005DC261137FE00D97648 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA005DA261137FE00D97648 /* DateCollectionViewCell.swift */; };
@@ -130,6 +133,9 @@
 		AA703F07260FCE4E0037519B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
 		AA703F0A260FCE4E0037519B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		AA703F11260FCEFA0037519B /* NetworkReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityService.swift; sourceTree = "<group>"; };
+		AA86DE0F261407D200429455 /* BrowseGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseGamesView.swift; sourceTree = "<group>"; };
+		AA86DE1A26140BFB00429455 /* BrowseGamesViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowseGamesViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		AA86DE1F26140D9000429455 /* BrowseGamesViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowseGamesViewController+TableView.swift"; sourceTree = "<group>"; };
 		AAA005D026112D2D00D97648 /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
 		AAA005D526112E5D00D97648 /* UIFont+Wagr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Wagr.swift"; sourceTree = "<group>"; };
 		AAA005DA261137FE00D97648 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -224,6 +230,7 @@
 		AA2CDF79260E778F00BC8303 /* Wagr-Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				AA86DE08261407B700429455 /* Views */,
 				AAA005C326112C6D00D97648 /* Common */,
 				AA703F10260FCE920037519B /* Components */,
 				AA703ED5260FA94B0037519B /* Models */,
@@ -295,6 +302,8 @@
 				AAE2657D261261C800AFEF5F /* ModalCelebrationViewController.xib */,
 				AAB6D96826129524004A9337 /* FullScreenCelebrationViewController.swift */,
 				AAB6D96926129524004A9337 /* FullScreenCelebrationViewController.xib */,
+				AA86DE1A26140BFB00429455 /* BrowseGamesViewController+CollectionView.swift */,
+				AA86DE1F26140D9000429455 /* BrowseGamesViewController+TableView.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -395,6 +404,14 @@
 				AAB7B83A261364000072181A /* ConfettiLayer.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		AA86DE08261407B700429455 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA86DE0F261407D200429455 /* BrowseGamesView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		AAA005C326112C6D00D97648 /* Common */ = {
@@ -761,6 +778,7 @@
 				AA703EBC260EC8170037519B /* GameCell.swift in Sources */,
 				AAF8927B2610017F0019C10D /* TeamViewModel.swift in Sources */,
 				AAF892AF26111BF80019C10D /* GameSorter.swift in Sources */,
+				AA86DE10261407D200429455 /* BrowseGamesView.swift in Sources */,
 				AA703ECE260F979E0037519B /* CoreDataManager.swift in Sources */,
 				AAF89280261027080019C10D /* UIColor+Wagr.swift in Sources */,
 				AAB6D95226126F7B004A9337 /* AnimatedGradientLayer.swift in Sources */,
@@ -783,8 +801,10 @@
 				AA703ED7260FA9520037519B /* TeamId.swift in Sources */,
 				AAA005DC261137FE00D97648 /* DateCollectionViewCell.swift in Sources */,
 				AA703E95260EBD0C0037519B /* NetworkError.swift in Sources */,
+				AA86DE1B26140BFB00429455 /* BrowseGamesViewController+CollectionView.swift in Sources */,
 				AAF892852610274F0019C10D /* UIImage+Wagr.swift in Sources */,
 				AA703E88260E96EF0037519B /* Team+CoreDataProperties.swift in Sources */,
+				AA86DE2026140D9000429455 /* BrowseGamesViewController+TableView.swift in Sources */,
 				AA703EC6260ECBD30037519B /* CoreDataContainer.swift in Sources */,
 				AA703EE7260FC7FE0037519B /* Game+Cacheable.swift in Sources */,
 				AA703EAA260EC5720037519B /* Formatter+ISO8601.swift in Sources */,

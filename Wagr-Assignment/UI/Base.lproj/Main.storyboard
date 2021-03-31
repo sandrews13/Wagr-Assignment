@@ -31,7 +31,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="BrowseGamesViewController" customModule="Wagr_Assignment" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="BrowseGamesView" customModule="Wagr_Assignment" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -98,14 +98,14 @@
                             <constraint firstItem="UjQ-8n-KQD" firstAttribute="bottom" secondItem="PI3-th-GUD" secondAttribute="bottom" id="icv-dn-pbo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vOs-Xc-02j" secondAttribute="bottom" id="wXo-Zf-w2O"/>
                         </constraints>
+                        <connections>
+                            <outlet property="collectionView" destination="PI3-th-GUD" id="E2S-hu-XG4"/>
+                            <outlet property="collectionViewTop" destination="cSp-VP-Z1F" id="R0O-rD-Ovd"/>
+                            <outlet property="loader" destination="RCs-V3-bst" id="ORt-O9-dyP"/>
+                            <outlet property="tableView" destination="vOs-Xc-02j" id="4tD-jf-Vuk"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Localize Me" id="Ahx-F2-AOm"/>
-                    <connections>
-                        <outlet property="collectionView" destination="PI3-th-GUD" id="fqh-tj-4Zm"/>
-                        <outlet property="collectionViewTop" destination="cSp-VP-Z1F" id="ByW-v3-w7S"/>
-                        <outlet property="loader" destination="RCs-V3-bst" id="VPR-bJ-L7L"/>
-                        <outlet property="tableView" destination="vOs-Xc-02j" id="Gal-cX-6fi"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
