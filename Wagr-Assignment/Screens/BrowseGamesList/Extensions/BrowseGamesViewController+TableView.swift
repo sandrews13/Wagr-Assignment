@@ -46,7 +46,8 @@ extension BrowseGamesViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let game = gameSorter.sortedGames[indexPath.section]?[indexPath.row] else {
+        let index = indexPath.section == 0 ? indexPath.row : (indexPath.row - 1)
+        guard let game = gameSorter.sortedGames[indexPath.section]?[index] else {
             os_log(.error, "Error: Selected game returned nil")
             return
         }

@@ -7,10 +7,11 @@
 
 import UIKit
 
+// Not localized as this is just a demo feature for internal use
 extension UIAlertController {
     
     static func celebrationActionSheet(host: UIViewController, game: Game) -> UIAlertController {
-        let controller = UIAlertController(title: "Select your celebration type", message: "", preferredStyle: .actionSheet)
+        let controller = UIAlertController(title: "", message: "Select your celebration type", preferredStyle: .actionSheet)
         controller.addAction(UIAlertAction(title: "Modal", style: .default, handler: { (action) in
             let modalCelebration = ModalCelebrationViewController()
             modalCelebration.modalPresentationStyle = .overFullScreen

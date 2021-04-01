@@ -79,7 +79,7 @@
                     <rect key="frame" x="16" y="544.5" width="398" height="90"/>
                 </view>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trophy" translatesAutoresizingMaskIntoConstraints="NO" id="O5h-PQ-YLe">
-                    <rect key="frame" x="64" y="535.5" width="24.5" height="35"/>
+                    <rect key="frame" x="56" y="535.5" width="24.5" height="35"/>
                     <color key="tintColor" name="brandedTextColour"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="9rL-ZW-sAy"/>
@@ -103,7 +103,7 @@
                 <constraint firstAttribute="bottom" secondItem="FID-AW-ZY2" secondAttribute="bottom" constant="32" id="Ndp-P3-oTG"/>
                 <constraint firstItem="FID-AW-ZY2" firstAttribute="leading" secondItem="eaF-JZ-eBI" secondAttribute="leading" constant="32" id="OHX-ft-vuJ"/>
                 <constraint firstItem="O5h-PQ-YLe" firstAttribute="top" secondItem="DEc-Xb-gRF" secondAttribute="top" constant="24" id="Q8l-zF-bnt"/>
-                <constraint firstItem="O5h-PQ-YLe" firstAttribute="leading" secondItem="DEc-Xb-gRF" secondAttribute="leading" constant="48" id="QM6-ow-d2e"/>
+                <constraint firstItem="O5h-PQ-YLe" firstAttribute="leading" secondItem="DEc-Xb-gRF" secondAttribute="leading" constant="40" id="QM6-ow-d2e"/>
                 <constraint firstItem="dBU-GY-8yy" firstAttribute="centerX" secondItem="eaF-JZ-eBI" secondAttribute="centerX" id="TJj-NN-5Vd"/>
                 <constraint firstItem="VhH-mc-SX4" firstAttribute="leading" secondItem="X2q-m4-FkM" secondAttribute="leading" constant="16" id="TUq-fj-JWy"/>
                 <constraint firstItem="X2q-m4-FkM" firstAttribute="trailing" secondItem="DEc-Xb-gRF" secondAttribute="trailing" id="Uto-zE-BV1"/>
